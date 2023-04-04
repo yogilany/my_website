@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/yousefgilany/static/css/main.707f2955.css",
+    "main.js": "/yousefgilany/static/js/main.32b69fde.js",
+    "static/js/787.bbe01249.chunk.js": "/yousefgilany/static/js/787.bbe01249.chunk.js",
+    "static/media/art3.png": "/yousefgilany/static/media/art3.2f0f1a3d1057f32405d3.png",
+    "static/media/logo.svg": "/yousefgilany/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/yousefgilany/index.html",
+    "main.707f2955.css.map": "/yousefgilany/static/css/main.707f2955.css.map",
+    "main.32b69fde.js.map": "/yousefgilany/static/js/main.32b69fde.js.map",
+    "787.bbe01249.chunk.js.map": "/yousefgilany/static/js/787.bbe01249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.707f2955.css",
+    "static/js/main.32b69fde.js"
+  ]
+}
