@@ -92,7 +92,7 @@ const Experience = () => {
   ];
 
   return (
-    <section class="text-gray-400 bg-gray-800 body-font">
+    <section class="text-gray-400 bg-gray-800 body-font" id="section-two">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
           <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">

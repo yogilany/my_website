@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+import Resume from "../../../../assets/Yousef_Gilany_Resume.pdf";
 
 const Hero = () => {
+  const [range, setRange] = useState(85);
   const fields = [
     { id: 1, name: "Front-End Development", duration: 1000 },
     { id: 2, name: "Back-End Development", duration: 1000 },
@@ -26,7 +28,7 @@ const Hero = () => {
 
   return (
     <>
-      <section class="bg-white dark:bg-gray-900 pt-20 pb-15">
+      <section class="bg-white dark:bg-gray-900 pt-20 pb-15" id="section-one">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
@@ -58,7 +60,9 @@ const Hero = () => {
                 Who am I?
               </a>
               <a
-                href="#"
+                href={Resume}
+                target="_blank"
+                rel="noreferrer"
                 class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
                 <svg
@@ -77,10 +81,43 @@ const Hero = () => {
                 See my resume
               </a>
             </div>
+            <div class="grid grid-cols-3 grid-flow-row gap-4">
+              <div class="col-span-2 ...">
+                <label
+                  for="default-range"
+                  class="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
+                >
+                  How likely is it that I will get an internship{" "}
+                </label>
+              </div>
+              <div class="col-span-1 ... justify-self-end">
+                <label
+                  for="default-range"
+                  class={`block mb-2 text-3xl font-bold text-gray-900 ${
+                    range > 50 ? "text-green-500" : "text-red-500"
+                  }`}
+                >
+                  {range}%{" "}
+                </label>
+              </div>
+            </div>
+
+            <input
+              onChange={(e) => setRange(e.target.value)}
+              id="medium-range"
+              type="range"
+              value={range}
+              class="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+            />
           </div>
           <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src={require("../../../../assets/art3.png")} alt="mockup" />
+            {range > 50 ? (
+              <img src={require("../../../../assets/art3.png")} alt="mockup" />
+            ) : (
+              <img src={require("../../../../assets/art4.png")} alt="mockup" />
+            )}
           </div>
+
           <hr class="drop-shadow-xl w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
       </section>

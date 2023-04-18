@@ -7,11 +7,16 @@ import Hero from "./components/Hero/Hero";
 import MoreExp from "./components/MoreExp/MoreExp";
 import Story from "./components/Story/Story";
 import Tailblock from "./components/Tailblock/Tailblock";
+import CurrentWork from "./CurrentWork/CurrentWork";
+import Intrests from "./components/Intrests/Intrests";
+import { HidingHeader } from "hiding-header-react";
 
 const MainPage = () => {
   return (
     <>
-      <Header />
+      <HidingHeader>
+        <Header />
+      </HidingHeader>
       <Hero />
 
       <Experience />
@@ -19,6 +24,8 @@ const MainPage = () => {
       <MoreExp />
       <Story />
       <Tailblock />
+      <CurrentWork />
+      <Intrests />
       <Footer />
     </>
   );
