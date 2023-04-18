@@ -6,7 +6,7 @@ const MoreExp = () => {
   return (
     <section class="text-gray-400 bg-gray-800 body-font">
       <div class="container px-5 py-24 mx-auto">
-        <div class="text-center mb-10">
+        <div class="sm:text-left md:text-center mb-10">
           <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             I also have a{" "}
             <span class="text-blue-600 dark:text-blue-500">fair</span> amount of

@@ -8,7 +8,7 @@ const Footer = () => {
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
             <span class="ml-3 text-xl font-extrabold">YOUSEF GILANY</span>
           </a>
-          <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">
+          <p class="text-center text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">
             © 2023 This website is designed and developed by Yousef Gilany —
             <a
               href="https://twitter.com/knyttneve"
