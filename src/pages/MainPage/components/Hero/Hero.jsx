@@ -90,7 +90,9 @@ const Hero = () => {
                   for="default-range"
                   class="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
                 >
-                  قلل إحتمالية حصولي على تدريب و انظر ماذا سيحدث{" "}
+                  {range > 50
+                    ? "قلل إحتمالية حصولي على تدريب و انظر ماذا سيحدث"
+                    : "زود تاني بسرعة زود تاني بسرعة"}
                 </label>
               </div>
               <div class="col-span-1 ... justify-self-end">
