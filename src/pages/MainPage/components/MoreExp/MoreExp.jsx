@@ -14,58 +14,58 @@ const MoreExp = () => {
           </h1>
         </div>
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          <div class=" p-2 sm:w-1/6 w-full">
+          <div class=" p-2  md:w-1/6 ">
             <SolidLabel title={"C"} />
           </div>
-          <div class="p-2 sm:w-1/6 w-full">
+          <div class="p-2 md:w-1/6 ">
             <SolidLabel title={"C++"} />
           </div>
-          <div class="p-2 sm:w-1/6 w-full">
+          <div class="p-2  md:w-1/6 ">
             <SolidLabel title={"C#"} />
           </div>
-          <div class="p-2 sm:w-1/6 w-full">
+          <div class="p-2 md:w-1/6 ">
             <SolidLabel title={"Flutter"} />
           </div>
-          <div class="p-2 sm:w-1/6 w-full">
+          <div class="p-2 md:w-1/6 ">
             <SolidLabel title={"Python"} />
           </div>
-          <div class="p-2 sm:w-1/6 w-full">
+          <div class="p-2 md:w-1/6 ">
             <SolidLabel title={"Java"} />
           </div>
-          <div class="p-2 sm:w-1/3 w-full">
+          <div class="p-2 md:w-1/3">
             <SolidLabel title={"Object Oriented Programming"} />
           </div>
-          <div class="p-2 sm:w-1/3 w-full">
+          <div class="p-2 md:w-1/3">
             <SolidLabel title={"Algorithms"} />
           </div>
-          <div class="p-2 sm:w-1/3 w-full">
+          <div class="p-2 md:w-1/3 ">
             <SolidLabel title={"Data Structures"} />
           </div>
-          <div class="p-2 sm:w-1/4 w-full">
+          <div class="p-2 md:w-1/4 ">
             <SolidLabel title={"Microdoft SQL Server"} />
           </div>
-          <div class="p-2 sm:w-1/4 w-full">
+          <div class="p-2 md:w-1/4 ">
             <SolidLabel title={"Quartus"} />
           </div>
-          <div class="p-2 sm:w-1/4 w-full">
+          <div class="p-2 md:w-1/4 ">
             <SolidLabel title={"Logisim"} />
           </div>
-          <div class="p-2 sm:w-1/4 w-full">
+          <div class="p-2 md:w-1/4 ">
             <SolidLabel title={"Multisim"} />
           </div>
-          <div class="p-2 sm:w-1/5 w-full">
+          <div class="p-2 md:w-1/5 ">
             <SolidLabel title={"Microdoft Office"} />
           </div>
-          <div class="p-2 sm:w-1/5 w-full">
+          <div class="p-2 md:w-1/5 ">
             <SolidLabel title={"Adobe Illustrator"} />
           </div>
-          <div class="p-2 sm:w-1/5 w-full">
+          <div class="p-2 md:w-1/5 ">
             <SolidLabel title={"Adobe Photoshop"} />
           </div>
-          <div class="p-2 sm:w-1/5 w-full">
+          <div class="p-2 md:w-1/5 ">
             <SolidLabel title={"Adobe XD"} />
           </div>
-          <div class="p-2 sm:w-1/5 w-full">
+          <div class="p-2 md:w-1/5 ">
             <SolidLabel title={"Final Cut Pro X"} />
           </div>
         </div>

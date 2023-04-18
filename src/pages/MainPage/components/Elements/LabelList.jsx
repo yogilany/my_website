@@ -8,12 +8,12 @@ const LabelList = ({ title, items, color }) => {
           {String(title).toUpperCase()}
         </h2>
       ) : null}
-      <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2">
+      <nav class="flex flex-col sm:items-start sm:text-left  -mb-1 space-y-2">
         {items.map((item) => {
           return (
             <a>
               <span
-                class={`bg-gray-800 ${color} w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center`}
+                class={`bg-gray-800 ${color} w-4 h-4 mr-2 rounded-full inline-flex  justify-center`}
               >
                 <svg
                   fill="none"

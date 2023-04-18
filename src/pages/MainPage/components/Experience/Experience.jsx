@@ -108,35 +108,27 @@ const Experience = () => {
             development skills needed to bring your digital vision to life.
           </p>
         </div>
-        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          <div class="p-2 sm:w-1/4 w-full">
-            <Label icon={icons[0].icon} title={"Front-End Development"} />
-          </div>
-          <div class="p-2 sm:w-1/4 w-full">
-            <Label icon={icons[1].icon} title={"Back-End Development"} />
-          </div>
-          <div class="p-2 sm:w-1/4 w-full">
-            <Label icon={icons[2].icon} title={"Databases"} />
-          </div>
-          <div class="p-2 sm:w-1/4 w-full">
-            <Label icon={icons[3].icon} title={"UI/UX & Tools"} />
-          </div>
-        </div>
 
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div class="p-2  sm:w-1/4 w-full">
+            <Label icon={icons[0].icon} title={"Front-End Development"} />
+
             <LabelList
               color={"text-blue-600"}
               items={["HTML", "CSS/SASS", "JavaScript", "React.js"]}
             />
           </div>
           <div class="p-2 sm:w-1/4 w-full">
+            <Label icon={icons[1].icon} title={"Back-End Development"} />
+
             <LabelList
               color={"text-yellow-600"}
               items={["Node.js", "Express.js", "REST APIs", "Bcrypt.js"]}
             />
           </div>
           <div class="p-2 sm:w-1/4 w-full">
+            <Label icon={icons[2].icon} title={"Databases"} />
+
             <LabelList
               color={"text-pink-600"}
               items={[
@@ -149,6 +141,8 @@ const Experience = () => {
             />
           </div>
           <div class="p-2 sm:w-1/4 w-full">
+            <Label icon={icons[3].icon} title={"UI/UX & Tools"} />
+
             <LabelList
               color={"text-green-600"}
               items={["Tailwind", "MaterialUI", "Adobe XD", "Git & Github"]}

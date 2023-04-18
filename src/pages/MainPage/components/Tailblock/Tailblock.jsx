@@ -4,11 +4,11 @@ const Tailblock = () => {
   return (
     <section class="text-gray-400 bg-gray-800 body-font">
       <div class="container px-5 py-24 mx-auto">
-        <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">
+        <h1 class="text-3xl font-medium title-font text-white mb-12 sm:text-left md:text-center">
           This was my supervisor evaluation for the period I worked at{" "}
         </h1>
 
-        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto sm:text-left md:text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

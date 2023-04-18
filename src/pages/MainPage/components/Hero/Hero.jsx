@@ -41,9 +41,9 @@ const Hero = () => {
                 Yousef.
               </span>
             </h1>
-            <h1 class="mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
-              I'm looking for an internship in{"  "}
-              <mark class="px-2 mx-1 text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded ">
+            <h1 class="leading-10 mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
+              I'm looking for an internship in{""}
+              <mark class="px-2 my-2 mx-2 text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded ">
                 Software Development.
               </mark>
             </h1>
@@ -110,7 +110,7 @@ const Hero = () => {
               class="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
             />
           </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <div class=" lg:mt-0 lg:col-span-5 lg:flex">
             {range > 50 ? (
               <img src={require("../../../../assets/art3.png")} alt="mockup" />
             ) : (

@@ -13,7 +13,7 @@ const Story = () => {
             <span class="text-blue-600 dark:text-blue-500">one</span> internship
             opportunity,
             <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
-              and it was in
+              and it was in{" "}
               <a
                 href="https://cech.uc.edu/schools/it/centers/itsolutionscenter.html"
                 target={"_blank"}
@@ -40,15 +40,15 @@ const Story = () => {
           </h2>
           <p class="mb-4">
             From{" "}
-            <span class="font-semibold text-gray-900 underline dark:text-white decoration-blue-500">
+            <span class="font-semibold text-gray-900  dark:text-white decoration-blue-500">
               July 11, 2022
             </span>{" "}
             to{" "}
-            <span class="font-semibold text-gray-900 underline dark:text-white decoration-blue-500">
+            <span class="font-semibold text-gray-900  dark:text-white decoration-blue-500">
               September 30, 2022
             </span>{" "}
             for a total of{" "}
-            <span class="font-semibold text-gray-900 underline dark:text-white decoration-blue-500">
+            <span class="font-semibold text-gray-900  dark:text-white decoration-blue-500">
               480 hours,
             </span>{" "}
             I have learned and practiced full stack software development in the

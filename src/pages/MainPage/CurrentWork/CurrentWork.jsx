@@ -12,7 +12,7 @@ const CurrentWork = () => {
         </h1>
 
         <dl class="grid mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
-          <div class="flex flex-col items-center justify-center">
+          <div class="mt-12 flex flex-col items-center justify-center">
             <dt class="mb-2 text-xl md:text-xl font-extrabold">
               IEEE WIE Official Website
             </dt>
@@ -29,14 +29,14 @@ const CurrentWork = () => {
               style={{ width: "50%" }}
             >
               <div
-                class="bg-yellow-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                class=" bg-yellow-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
                 style={{ width: "45%" }}
               >
                 {" "}
               </div>
             </div>
           </div>
-          <div class="flex flex-col items-center justify-center">
+          <div class="mt-12 flex flex-col items-center justify-center">
             <dt class="mb-2 text-xl md:text-xl font-extrabold">
               Eventbrite Clone Project
             </dt>
@@ -60,7 +60,7 @@ const CurrentWork = () => {
               </div>
             </div>
           </div>
-          <div class="flex flex-col items-center justify-center">
+          <div class="mt-12 flex flex-col items-center justify-center">
             <dt class="mb-2 text-xl md:text-xl font-extrabold">
               Java Search Engine
             </dt>
