@@ -41,7 +41,7 @@ const Hero = () => {
                 Yousef.
               </span>
             </h1>
-            <h1 class="leading-10 mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
+            <h1 class="leading-relaxed mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
               I'm looking for an internship in{""}
               <mark class="px-2 my-2 mx-2 text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded ">
                 Software Development.
