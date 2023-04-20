@@ -17,7 +17,7 @@ const Projects = () => {
           </small>
         </h1>
 
-        <ol class="relative border-l border-gray-200 border-gray-700">
+        <ol class="relative border-l  border-gray-700">
           <li class="mb-10 ml-6">
             <span class="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8  ring-gray-900 bg-blue-900">
               <svg
