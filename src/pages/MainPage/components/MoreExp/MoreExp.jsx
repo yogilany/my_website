@@ -7,9 +7,9 @@ const MoreExp = () => {
     <section class="text-gray-400 bg-gray-800 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="sm:text-left md:text-center mb-10">
-          <h1 class="mb-4 text-5xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl dark:text-white">
-            I also have a <span class=" dark:text-blue-500">fair</span> amount
-            of experience with{" "}
+          <h1 class="mb-4 text-5xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">
+            I also have a <span class=" text-blue-500">fair</span> amount of
+            experience with{" "}
           </h1>
         </div>
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

@@ -6,7 +6,7 @@ const Feedback = () => {
       <div class="container px-5 py-24 mx-auto">
         <h1 class="text-3xl font-bold title-font text-white mb-12 sm:text-left md:text-center">
           This was{" "}
-          <span class="underline underline-offset-2 leading-normal decoration-4 decoration-blue-400 dark:decoration-blue-600">
+          <span class="underline underline-offset-2 leading-normal decoration-4 decoration-blue-400 decoration-blue-600">
             {" "}
             my supervisor{" "}
           </span>

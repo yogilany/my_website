@@ -2,16 +2,16 @@ import React from "react";
 
 const CurrentWork = () => {
   return (
-    <section class="dark:bg-gray-900 py-24">
+    <section class="bg-gray-900 py-24">
       <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-        <h1 class="mb-16 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+        <h1 class="mb-16 text-3xl font-extrabold text-gray-900 text-white md:text-5xl lg:text-6xl">
           What am I working on{" "}
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
             currently?
           </span>{" "}
         </h1>
 
-        <dl class="grid mx-auto  sm:grid-cols-3 dark:text-white">
+        <dl class="grid mx-auto  sm:grid-cols-3 text-white">
           <div class="mt-12 flex flex-col items-center justify-center">
             <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 bg-opacity-40  ">
               <h1 class="text-3xl font-bold">1</h1>
@@ -21,14 +21,14 @@ const CurrentWork = () => {
             </dt>
             <span class="inline-block h-1 w-10 rounded bg-gray-700  mt-4 mb-4"></span>
 
-            <dd class=" text-sm font-medium text-gray-500 dark:text-gray-400">
+            <dd class=" text-sm font-medium text-gray-500 text-gray-400">
               For my role as an IT Head
             </dd>
-            <dd class="text-xs mt-2 font-regular text-cyan-500 dark:text-cyan-400">
+            <dd class="text-xs mt-2 font-regular text-cyan-500 text-cyan-400">
               Full Stack
             </dd>
             <div
-              class="w-full bg-gray-200 rounded-full dark:bg-gray-700 my-4"
+              class="w-full bg-gray-200 rounded-full bg-gray-700 my-4"
               style={{ width: "50%" }}
             >
               <div
@@ -48,14 +48,14 @@ const CurrentWork = () => {
             </dt>
             <span class="inline-block h-1 w-10 rounded bg-gray-700  mt-4 mb-4"></span>
 
-            <dd class=" text-sm font-medium text-gray-500 dark:text-gray-400">
+            <dd class=" text-sm font-medium text-gray-500 text-gray-400">
               Software Engineering Course Project
             </dd>
-            <dd class="text-xs mt-2 font-regular text-cyan-500 dark:text-cyan-400">
+            <dd class="text-xs mt-2 font-regular text-cyan-500 text-cyan-400">
               Front End
             </dd>
             <div
-              class="w-full bg-gray-200 rounded-full dark:bg-gray-700 my-4"
+              class="w-full bg-gray-200 rounded-full bg-gray-700 my-4"
               style={{ width: "65%" }}
             >
               <div
@@ -75,14 +75,14 @@ const CurrentWork = () => {
             </dt>
             <span class="inline-block h-1 w-10 rounded bg-gray-700  mt-4 mb-4"></span>
 
-            <dd class=" text-sm font-medium text-gray-500 dark:text-gray-400">
+            <dd class=" text-sm font-medium text-gray-500 text-gray-400">
               Adv. Programming Techniques Course Project
             </dd>
-            <dd class="text-xs mt-2 font-regular text-cyan-500 dark:text-cyan-400">
+            <dd class="text-xs mt-2 font-regular text-cyan-500 text-cyan-400">
               Java
             </dd>
             <div
-              class="w-full bg-gray-200 rounded-full dark:bg-gray-700 my-4"
+              class="w-full bg-gray-200 rounded-full bg-gray-700 my-4"
               style={{ width: "50%" }}
             >
               <div

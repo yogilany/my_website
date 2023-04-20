@@ -2,22 +2,20 @@ import React from "react";
 
 const Story = () => {
   return (
-    <section class=" dark:bg-gray-900 py-24  md:py-12">
+    <section class=" bg-gray-900 py-24  md:py-12">
       <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light  sm:text-lg dark:text-gray-400">
-          <h2 class="leading-12 mb-12 text-4xl tracking-tight font-extrabold  dark:text-white">
-            <mark class="px-2 text-white  rounded dark:bg-blue-500">
-              So far
-            </mark>{" "}
-            I have had only <span class=" dark:text-blue-500">one</span>{" "}
-            internship opportunity,
-            <small class="ml-2 font-semibold dark:text-gray-400">
+        <div class="font-light  sm:text-lg text-gray-400">
+          <h2 class="leading-12 mb-12 text-4xl tracking-tight font-extrabold  text-white">
+            <mark class="px-2 text-white  rounded bg-blue-500">So far</mark> I
+            have had only <span class=" text-blue-500">one</span> internship
+            opportunity,
+            <small class="ml-2 font-semibold text-gray-400">
               and it was in{" "}
               <a
                 href="https://cech.uc.edu/schools/it/centers/itsolutionscenter.html"
                 target={"_blank"}
                 rel={"noreferrer"}
-                class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                class="inline-flex items-center font-medium text-blue-600 text-blue-500 hover:underline"
               >
                 ITSC
                 <svg
@@ -39,15 +37,15 @@ const Story = () => {
           </h2>
           <p class="mb-4 ">
             From{" "}
-            <span class="font-semibold text-gray-900  dark:text-white decoration-blue-500">
+            <span class="font-semibold text-gray-900  text-white decoration-blue-500">
               July 11, 2022
             </span>{" "}
             to{" "}
-            <span class="font-semibold text-gray-900  dark:text-white decoration-blue-500">
+            <span class="font-semibold text-gray-900  text-white decoration-blue-500">
               September 30, 2022
             </span>{" "}
             for a total of{" "}
-            <span class="font-semibold text-gray-900  dark:text-white decoration-blue-500">
+            <span class="font-semibold text-gray-900  text-white decoration-blue-500">
               480 hours,
             </span>{" "}
             I have learned and practiced full stack software development in the

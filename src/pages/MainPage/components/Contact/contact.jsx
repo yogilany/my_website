@@ -8,9 +8,9 @@ const Contact = () => {
     <>
       <section class=" bg-gray-900   py-12" id="section-three">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-          <h1 class="  mb-12 text-3xl font-extrabold  dark:text-white md:text-5xl lg:text-8xl">
+          <h1 class="  mb-12 text-3xl font-extrabold  text-white md:text-5xl lg:text-8xl">
             {" "}
-            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">
+            <span class="underline underline-offset-3 decoration-8 decoration-blue-400 decoration-blue-600">
               {" "}
               After all ...
             </span>
@@ -21,7 +21,7 @@ const Contact = () => {
               <figure class="relative max-w-sm ">
                 <img class="h-auto max-w-full rounded-lg" src={coone} alt="" />
                 <figcaption class="absolute px-4 text-lg text-bold text-white bottom-6">
-                  <h1 class="font-bold text-gray-900 dark:text-white md:text-2xl shadow">
+                  <h1 class="font-bold text-gray-900 text-white md:text-2xl shadow">
                     You need workforce
                   </h1>
                 </figcaption>
@@ -31,7 +31,7 @@ const Contact = () => {
               <figure class="relative max-w-sm ">
                 <img class="h-auto max-w-full rounded-lg" src={cotwo} alt="" />
                 <figcaption class="absolute px-4 text-lg text-bold text-white bottom-6">
-                  <h1 class="font-bold text-gray-900 dark:text-white md:text-2xl shadow">
+                  <h1 class="font-bold text-gray-900 text-white md:text-2xl shadow">
                     I need experience
                   </h1>
                 </figcaption>
@@ -45,7 +45,7 @@ const Contact = () => {
                   alt=""
                 />
                 <figcaption class="absolute px-4 text-lg text-bold text-white bottom-6 ">
-                  <h1 class="font-bold text-gray-900 dark:text-white md:text-2xl shadow">
+                  <h1 class="font-bold text-gray-900 text-white md:text-2xl shadow">
                     So it sounds like a match
                   </h1>
                 </figcaption>
@@ -56,14 +56,14 @@ const Contact = () => {
       </section>
       <section class=" bg-gray-700">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-          <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
+          <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 text-white">
             <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">EMAIL</dt>
-              <dd class="font-light text-gray-500 dark:text-gray-400">
-                <p class="text-gray-500 dark:text-gray-400">
+              <dd class="font-light text-gray-500 text-gray-400">
+                <p class="text-gray-500 text-gray-400">
                   <a
                     href="mailto: yogilany@gmail.com"
-                    class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                    class="inline-flex items-center font-medium text-blue-600 text-blue-500 hover:underline"
                   >
                     yogilany@gmail.com
                     <svg
@@ -146,7 +146,7 @@ const Contact = () => {
 
             <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">PHONE</dt>
-              <dd class=" font-medium text-blue-600 dark:text-blue-500  ">
+              <dd class=" font-medium text-blue-600 text-blue-500  ">
                 +201159746101
               </dd>
             </div>
