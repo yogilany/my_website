@@ -14,7 +14,7 @@ const AboutMe = () => {
             engineering at Cairo University, Faculty of Engineering.{" "}
           </p>
           <p class="mb-4">
-            When I'm not coding, you'll often find me behind the lens of a
+            When I'm not coding, you'll often find me behind the lens of my
             Iphone's camera, capturing the world around me through the art of
             videography. I love experimenting with different styles and
             techniques, and I'm always looking for new ways to tell a story
