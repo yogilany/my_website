@@ -17,7 +17,7 @@ const Contact = () => {
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
+            <div className="mx-auto">
               <figure className="relative max-w-sm ">
                 <img
                   className="h-auto max-w-full rounded-lg"
@@ -31,7 +31,7 @@ const Contact = () => {
                 </figcaption>
               </figure>
             </div>
-            <div>
+            <div className="mx-auto">
               <figure className="relative max-w-sm ">
                 <img
                   className="h-auto max-w-full rounded-lg"
@@ -45,7 +45,7 @@ const Contact = () => {
                 </figcaption>
               </figure>
             </div>
-            <div>
+            <div className="mx-auto">
               <figure className="relative max-w-sm shadow-gray-800">
                 <img
                   className="h-auto max-w-full rounded-lg "
