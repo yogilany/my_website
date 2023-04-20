@@ -19,10 +19,10 @@ const Projects = () => {
 
         <ol class="relative border-l border-gray-200 border-gray-700">
           <li class="mb-10 ml-6">
-            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ring-gray-900 bg-blue-900">
+            <span class="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8  ring-gray-900 bg-blue-900">
               <svg
                 aria-hidden="true"
-                class="w-3 h-3 text-blue-800 text-blue-300"
+                class="w-3 h-3 text-blue-300"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const Projects = () => {
                 ></path>
               </svg>
             </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900 text-white">
+            <h3 class="mb-1 text-lg font-semibold  text-white">
               Eventbrite application clone
               <small class="ml-2 font-semibold text-gray-500 text-gray-400">
                 <br />

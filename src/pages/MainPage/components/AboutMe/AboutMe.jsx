@@ -2,12 +2,12 @@ import React from "react";
 import me from "../../../../assets/me.png";
 const AboutMe = () => {
   return (
-    <section class="bg-white bg-gray-800" id="section-four">
+    <section class=" bg-gray-800" id="section-four">
       <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg text-gray-400">
+        <div class="font-light  sm:text-lg text-gray-400">
           <h2 class="leading-normal  md:leading-normal mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
             Welcome to my portfolio, where the code never sleeps{" "}
-            <span class="text-blue-600 text-blue-500">and neither do I!</span>
+            <span class=" text-blue-500">and neither do I!</span>
           </h2>
           <p class="mb-4 font-medium text-white ">
             My name is Yousef Mahmoud Gilany, and I'm a senior-1 computer

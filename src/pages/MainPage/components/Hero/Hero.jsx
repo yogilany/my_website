@@ -122,7 +122,7 @@ const Hero = () => {
               <div class="col-span-2 ...">
                 <label
                   for="default-range"
-                  class="block mb-2 text-xl font-medium text-gray-900 text-white"
+                  class="block mb-2 text-xl font-medium  text-white"
                 >
                   {message}
                 </label>
@@ -144,7 +144,7 @@ const Hero = () => {
               id="medium-range"
               type="range"
               value={range}
-              class="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer bg-gray-700"
+              class="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer "
             />
           </div>
           <div class=" lg:mt-0 lg:col-span-5 lg:flex">
@@ -171,7 +171,7 @@ const Hero = () => {
             )}
           </div>
 
-          <hr class="drop-shadow-xl w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 bg-gray-700" />
+          <hr class="drop-shadow-xl w-48 h-1 mx-auto my-4 border-0 rounded md:my-10 bg-gray-700" />
         </div>
       </section>
     </>
