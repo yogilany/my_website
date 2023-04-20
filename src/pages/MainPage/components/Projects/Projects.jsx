@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intrests = () => {
+const Projects = () => {
   return (
     <section class=" dark:bg-gray-800 py-12 px-3 ">
       <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
@@ -266,4 +266,4 @@ const Intrests = () => {
   );
 };
 
-export default Intrests;
+export default Projects;

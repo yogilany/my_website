@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tailblock = () => {
+const Feedback = () => {
   return (
     <section class="text-gray-400 bg-gray-800 body-font">
       <div class="container px-5 py-24 mx-auto">
@@ -47,4 +47,4 @@ const Tailblock = () => {
   );
 };
 
-export default Tailblock;
+export default Feedback;

@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../assets/me.png";
+import me from "../../../../assets/me.png";
 const AboutMe = () => {
   return (
     <section class="bg-white dark:bg-gray-800" id="section-four">

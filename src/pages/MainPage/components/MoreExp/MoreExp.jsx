@@ -1,6 +1,6 @@
 import React from "react";
-import Label from "../Elements/Label";
-import SolidLabel from "../Elements/SolidLabel";
+import Label from "../../Elements/Label";
+import SolidLabel from "../../Elements/SolidLabel";
 
 const MoreExp = () => {
   return (

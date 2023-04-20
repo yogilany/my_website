@@ -1,6 +1,6 @@
 import React from "react";
-import Label from "../Elements/Label";
-import LabelList from "../Elements/LabelList";
+import Label from "../../Elements/Label";
+import LabelList from "../../Elements/LabelList";
 
 const Experience = () => {
   const icons = [

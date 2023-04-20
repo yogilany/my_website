@@ -1,14 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {
-  BrowserRouter,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
-import About from "./pages/About/About";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
