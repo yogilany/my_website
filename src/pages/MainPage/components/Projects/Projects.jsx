@@ -135,7 +135,7 @@ const Projects = () => {
                 Jan 2022{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-200 ">
               A second-year college project. | Data Structures and Algorithms
               course project{" "}
             </time>
@@ -173,7 +173,7 @@ const Projects = () => {
                 Jun 2021{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-200 ">
               A first-year college project. | Programming Techniques course
               project,
             </time>
@@ -210,7 +210,7 @@ const Projects = () => {
                 Jan 2022{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-200 ">
               A second-year college project. | Microprocessors-1 course project{" "}
             </time>
             <p class="text-base font-normal  text-gray-400">
