@@ -61,36 +61,36 @@ const Hero = () => {
 
   return (
     <>
-      <section class=" dark:bg-gray-900 pt-12 md:pt-20 pb-15" id="section-one">
+      <section class=" bg-gray-900 pt-12 md:pt-20 pb-15" id="section-one">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="mb-4 text-4xl md:text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            <h1 class="mb-4 text-4xl  font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-white">
               Ahlan!
             </h1>
 
-            <h1 class="mb-4 text-6xl md:text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-8xl dark:text-white">
+            <h1 class="mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl text-white">
               I'm{" "}
               <span class="text-transparent  bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
                 Youseff.
               </span>
             </h1>
-            <h1 class="leading-relaxed md:mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
+            <h1 class="leading-relaxed md:mb-4 text-2xl font-medium tracking-tight  md:text-2xl lg:text-3xl text-white">
               I'm looking for an internship in
             </h1>
-            <h1 class="leading-relaxed mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
+            <h1 class="leading-relaxed mb-4 text-2xl font-medium tracking-tight   md:text-2xl lg:text-3xl text-white">
               <mark class="px-2 my-2  text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded ">
                 Software Development.
               </mark>
             </h1>
 
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-gray-400">
               Are you looking for an intern with a sense of humor and a love for
               coding? Lucky you! You've found the perfect match.
             </p>
             <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4">
               <a
                 href="#"
-                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:ring-primary-900"
               >
                 <HashLink smooth to="/#section-four">
                   Who am I?
@@ -100,7 +100,7 @@ const Hero = () => {
                 href={Resume}
                 target="_blank"
                 rel="noreferrer"
-                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 text-white border-gray-700 hover:bg-gray-700 focus:ring-gray-800"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ const Hero = () => {
               <div class="col-span-2 ...">
                 <label
                   for="default-range"
-                  class="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-xl font-medium text-gray-900 text-white"
                 >
                   {message}
                 </label>
@@ -144,7 +144,7 @@ const Hero = () => {
               id="medium-range"
               type="range"
               value={range}
-              class="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+              class="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer bg-gray-700"
             />
           </div>
           <div class=" lg:mt-0 lg:col-span-5 lg:flex">
@@ -171,7 +171,7 @@ const Hero = () => {
             )}
           </div>
 
-          <hr class="drop-shadow-xl w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr class="drop-shadow-xl w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 bg-gray-700" />
         </div>
       </section>
     </>
