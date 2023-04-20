@@ -135,9 +135,9 @@ const Projects = () => {
                 Jan 2022{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-200 ">
-              A second-year college project. | Data Structures and Algorithms
-              course project{" "}
+            <time class="block mb-2 text-sm font-normal leading-none text-blue-300 ">
+              A second-year college project. <br /> Data Structures and
+              Algorithms course project.{" "}
             </time>
             <p class="text-base font-normal  text-gray-400">
               Description: A simple command-line simulator for a hypothetical
@@ -173,9 +173,9 @@ const Projects = () => {
                 Jun 2021{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-200 ">
-              A first-year college project. | Programming Techniques course
-              project,
+            <time class="block mb-2 text-sm font-normal leading-none text-blue-300 ">
+              A first-year college project. <br> </br>Programming Techniques
+              course project.
             </time>
             <p class="text-base font-normal  text-gray-400">
               Description: Applying object oriented programming concepts. we
@@ -210,8 +210,9 @@ const Projects = () => {
                 Jan 2022{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-200 ">
-              A second-year college project. | Microprocessors-1 course project{" "}
+            <time class="block mb-2 text-sm font-normal leading-none text-blue-300 ">
+              A second-year college project. <br /> Microprocessors-1 course
+              project.
             </time>
             <p class="text-base font-normal  text-gray-400">
               Description: A two-player processor simulation where each player
