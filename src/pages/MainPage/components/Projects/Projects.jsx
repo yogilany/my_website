@@ -41,9 +41,9 @@ const Projects = () => {
               </small>
             </h3>
 
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">
-              A third-year college project. | Software Engineering course
-              project
+            <time class="block mb-2 text-sm font-normal leading-normal text-blue-300 ">
+              A third-year college project. <br />
+              Software Engineering course project.
             </time>
             <p class="mb-4 text-base font-normal  text-gray-400">
               Description: The project aims to design and implement a software
@@ -97,9 +97,9 @@ const Projects = () => {
               </small>
             </h3>
 
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">
-              A second-year college project. | Database Management course
-              project{" "}
+            <time class="block mb-2 text-sm font-normal leading-normal text-blue-300 ">
+              A second-year college project. <br></br>Database Management course
+              project.
             </time>
             <p class="text-base font-normal  text-gray-400">
               Description: The system is designed for a warehouse with multiple
@@ -135,9 +135,9 @@ const Projects = () => {
                 Jan 2022{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-blue-300 ">
+            <time class="block mb-2 text-sm font-normal leading-normal text-blue-300 ">
               A second-year college project. <br /> Data Structures and
-              Algorithms course project.{" "}
+              Algorithms course project.
             </time>
             <p class="text-base font-normal  text-gray-400">
               Description: A simple command-line simulator for a hypothetical
@@ -173,9 +173,9 @@ const Projects = () => {
                 Jun 2021{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-blue-300 ">
-              A first-year college project. <br> </br>Programming Techniques
-              course project.
+            <time class="block mb-2 text-sm font-normal leading-normal text-blue-300 ">
+              A first-year college project. <br /> Programming Techniques course
+              project.
             </time>
             <p class="text-base font-normal  text-gray-400">
               Description: Applying object oriented programming concepts. we
@@ -210,7 +210,7 @@ const Projects = () => {
                 Jan 2022{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-blue-300 ">
+            <time class="block mb-2 text-sm font-normal leading-normal text-blue-300 ">
               A second-year college project. <br /> Microprocessors-1 course
               project.
             </time>
@@ -247,8 +247,10 @@ const Projects = () => {
                 Jan 2023{" "}
               </small>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">
-              A third-year college project. | Operating Systems.
+            <time class="block mb-2 text-sm font-normal leading-normal text-blue-300 ">
+              A third-year college project.
+              <br />
+              Operating Systems.
             </time>
             <p class="text-base font-normal  text-gray-400">
               Description: A CPU scheduler determines an order for the execution
