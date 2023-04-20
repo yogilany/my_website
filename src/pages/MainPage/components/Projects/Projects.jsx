@@ -90,7 +90,7 @@ const Projects = () => {
               </svg>
             </span>
             <h3 className="mb-1 text-lg font-semibold  text-white">
-              WAREHOUSE MANAGEMENT SYSTEM
+              Warehouse Management System
               <small className="ml-2 font-semibold  text-gray-400">
                 <br />
                 Jan 2022{" "}
@@ -129,7 +129,7 @@ const Projects = () => {
               </svg>
             </span>
             <h3 className="mb-1 text-lg font-semibold  text-white">
-              MARS EXPLORATION
+              Mars Exploration
               <small className="ml-2 font-semibold  text-gray-400">
                 <br />
                 Jan 2022{" "}
@@ -167,7 +167,7 @@ const Projects = () => {
               </svg>
             </span>
             <h3 className="mb-1 text-lg font-semibold  text-white">
-              PAINT FOR KIDS GAME APP
+              Paint For Kids Game App
               <small className="ml-2 font-semibold  text-gray-400">
                 <br />
                 Jun 2021{" "}
@@ -204,7 +204,7 @@ const Projects = () => {
               </svg>
             </span>
             <h3 className="mb-1 text-lg font-semibold  text-white">
-              THE PROCESSOR SIMULATION GAME
+              The Processor Simulation Game
               <small className="ml-2 font-semibold  text-gray-400">
                 <br />
                 Jan 2022{" "}
@@ -241,7 +241,7 @@ const Projects = () => {
               </svg>
             </span>
             <h3 className="mb-1 text-lg font-semibold  text-white">
-              OPERATING SYSTEM SCHEDULER SIMULATO
+              Operating System Scheduler simulator
               <small className="ml-2 font-semibold  text-gray-400">
                 <br />
                 Jan 2023{" "}
