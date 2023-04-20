@@ -8,7 +8,7 @@ const Contact = () => {
     <>
       <section className=" bg-gray-900   py-12" id="section-three">
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-          <h1 className="  mb-12 text-3xl font-extrabold  text-white md:text-5xl lg:text-8xl">
+          <h1 className="  mb-12 text-5xl font-extrabold  text-white md:text-5xl lg:text-8xl">
             {" "}
             <span className="underline underline-offset-3 decoration-8 decoration-blue-400 decoration-blue-600">
               {" "}
@@ -62,7 +62,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className=" bg-gray-700">
+      <section className=" bg-gray-700 py-12">
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
           <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 text-white">
             <div className="flex flex-col items-center justify-center">
@@ -91,6 +91,15 @@ const Contact = () => {
                     </svg>
                   </a>
                 </p>
+              </dd>
+            </div>
+
+            <div className="flex flex-col items-center justify-center">
+              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
+                PHONE
+              </dt>
+              <dd className=" font-medium text-blue-600 text-blue-500  ">
+                +201159746101
               </dd>
             </div>
             <span className="inline-flex mx-auto sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
@@ -153,15 +162,6 @@ const Contact = () => {
                 </svg>
               </a>
             </span>
-
-            <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                PHONE
-              </dt>
-              <dd className=" font-medium text-blue-600 text-blue-500  ">
-                +201159746101
-              </dd>
-            </div>
           </dl>
         </div>
       </section>
