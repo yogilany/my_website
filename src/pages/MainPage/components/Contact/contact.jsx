@@ -8,7 +8,7 @@ const Contact = () => {
     <>
       <section class=" bg-gray-900   py-12" id="section-three">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-          <h1 class="  mb-12 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-8xl">
+          <h1 class="  mb-12 text-3xl font-extrabold  dark:text-white md:text-5xl lg:text-8xl">
             {" "}
             <span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">
               {" "}

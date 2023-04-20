@@ -2,7 +2,7 @@ import React from "react";
 
 const CurrentWork = () => {
   return (
-    <section class="bg-white dark:bg-gray-900 py-24">
+    <section class="dark:bg-gray-900 py-24">
       <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         <h1 class="mb-16 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
           What am I working on{" "}
@@ -11,7 +11,7 @@ const CurrentWork = () => {
           </span>{" "}
         </h1>
 
-        <dl class="grid mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
+        <dl class="grid mx-auto  sm:grid-cols-3 dark:text-white">
           <div class="mt-12 flex flex-col items-center justify-center">
             <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 bg-opacity-40  ">
               <h1 class="text-3xl font-bold">1</h1>

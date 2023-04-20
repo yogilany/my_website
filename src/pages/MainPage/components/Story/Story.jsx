@@ -2,17 +2,16 @@ import React from "react";
 
 const Story = () => {
   return (
-    <section class="bg-white dark:bg-gray-900 py-24  md:py-12">
+    <section class=" dark:bg-gray-900 py-24  md:py-12">
       <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 class="leading-12 mb-12 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">
+        <div class="font-light  sm:text-lg dark:text-gray-400">
+          <h2 class="leading-12 mb-12 text-4xl tracking-tight font-extrabold  dark:text-white">
+            <mark class="px-2 text-white  rounded dark:bg-blue-500">
               So far
             </mark>{" "}
-            I have had only{" "}
-            <span class="text-blue-600 dark:text-blue-500">one</span> internship
-            opportunity,
-            <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+            I have had only <span class=" dark:text-blue-500">one</span>{" "}
+            internship opportunity,
+            <small class="ml-2 font-semibold dark:text-gray-400">
               and it was in{" "}
               <a
                 href="https://cech.uc.edu/schools/it/centers/itsolutionscenter.html"
