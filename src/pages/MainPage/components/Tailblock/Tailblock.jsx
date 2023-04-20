@@ -4,8 +4,13 @@ const Tailblock = () => {
   return (
     <section class="text-gray-400 bg-gray-800 body-font">
       <div class="container px-5 py-24 mx-auto">
-        <h1 class="text-3xl font-medium title-font text-white mb-12 sm:text-left md:text-center">
-          This was my supervisor evaluation for the period I worked at{" "}
+        <h1 class="text-3xl font-bold title-font text-white mb-12 sm:text-left md:text-center">
+          This was{" "}
+          <span class="underline underline-offset-2 leading-normal decoration-4 decoration-blue-400 dark:decoration-blue-600">
+            {" "}
+            my supervisor{" "}
+          </span>
+          evaluation for the period I worked at{" "}
         </h1>
 
         <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto sm:text-left md:text-center">

@@ -10,6 +10,8 @@ import Tailblock from "./components/Tailblock/Tailblock";
 import CurrentWork from "./CurrentWork/CurrentWork";
 import Intrests from "./components/Intrests/Intrests";
 import { HidingHeader } from "hiding-header-react";
+import Contact from "./components/Contact/contact";
+import AboutMe from "../AboutMe/AboutMe";
 
 const MainPage = () => {
   return (
@@ -18,6 +20,7 @@ const MainPage = () => {
         <Header />
       </HidingHeader>
       <Hero />
+      <AboutMe />
 
       <Experience />
       <Divider />
@@ -26,6 +29,7 @@ const MainPage = () => {
       <Tailblock />
       <CurrentWork />
       <Intrests />
+      <Contact />
       <Footer />
     </>
   );

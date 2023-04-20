@@ -2,66 +2,265 @@ import React from "react";
 
 const Intrests = () => {
   return (
-    <section
-      class="py-24 bg-gradient-to-r from-pink-500 to-orange-400  "
-      id="section-three"
-    >
+    <section class=" dark:bg-gray-800 py-12 px-3 ">
       <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-md mb-8 lg:mb-16">
-          <h2 class="mb-4 text-6xl md:text-8xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Don't hesitate to contact me
-          </h2>
-          {/* <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-            Here at Flowbite we focus on markets where technology, innovation,
-            and capital can unlock long-term value and drive economic growth.
-          </p> */}
-        </div>
-        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-32 md:space-y-0">
-          <div class="grid grid-cols-2 ">
+        <h1 class=" text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
+            Some
+          </span>{" "}
+          Previous projects{" "}
+        </h1>
+        <h1 class="mb-16 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+          <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
             {" "}
-            <div class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-primary-100 bg-opacity-40 lg:h-20 lg:w-20 ">
+            but I am eager to take on more.
+          </small>
+        </h1>
+
+        <ol class="relative border-l border-gray-200 dark:border-gray-700">
+          <li class="mb-10 ml-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <svg
+                aria-hidden="true"
+                class="w-3 h-3 text-blue-800 dark:text-blue-300"
                 fill="currentColor"
-                class="w-10 h-10 text-primary-600 lg:w-10 lg:h-10 dark:text-white"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
               >
-                <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"></path>
-                <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"></path>
-              </svg>
-            </div>
-            <div>
-              {" "}
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Email</h3>
-              <p class="text-lg  dark:text-white">yogilany@gmail.com</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 ">
-            {" "}
-            <div class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-primary-100 bg-opacity-40 lg:h-20 lg:w-20 ">
-              <svg
-                fill="currentColor"
-                class="w-10 h-10 text-primary-600 lg:w-10 lg:h-10 dark:text-white"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path d="M8 16.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75z"></path>
                 <path
-                  clip-rule="evenodd"
                   fill-rule="evenodd"
-                  d="M4 4a3 3 0 013-3h6a3 3 0 013 3v12a3 3 0 01-3 3H7a3 3 0 01-3-3V4zm4-1.5v.75c0 .414.336.75.75.75h2.5a.75.75 0 00.75-.75V2.5h1A1.5 1.5 0 0114.5 4v12a1.5 1.5 0 01-1.5 1.5H7A1.5 1.5 0 015.5 16V4A1.5 1.5 0 017 2.5h1z"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
                 ></path>
               </svg>
-            </div>
-            <div>
-              {" "}
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Phone</h3>
-              <p class="text-lg  dark:text-white">+201159746101</p>
-            </div>
-          </div>
-        </div>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Eventbrite application clone
+              <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+                <br />
+                In Progress
+              </small>
+            </h3>
+
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              A third-year college project. | Software Engineering course
+              project
+            </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              Description: The project aims to design and implement a software
+              product using state-of-the-art tools and technologies in the
+              software industry. I am the subteam leader of the frontend team.
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              Tools and Technologies: React, Redux, React-Router, React
+              Bootstrap, Material UI, Axios
+            </p>
+            {/* <a
+              href="#"
+              class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+            >
+              <svg
+                class="w-4 h-4 mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>{" "}
+              Download ZIP
+            </a> */}
+          </li>
+          <li class="mb-10 ml-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                aria-hidden="true"
+                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              WAREHOUSE MANAGEMENT SYSTEM
+              <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+                <br />
+                Jan 2022{" "}
+              </small>
+            </h3>
+
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              A second-year college project. | Database Management course
+              project{" "}
+            </time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Description: The system is designed for a warehouse with multiple
+              storefronts. It enables the workers to monitor the availability
+              and location of all goods, tracks orders from suppliers, and
+              adding analytic tools for top managers
+            </p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Tools and Technologies: C#, Microsoft SQL Server Management,
+              MySQL.
+            </p>
+          </li>
+          <li class="ml-6 mb-10 ">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                aria-hidden="true"
+                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              MARS EXPLORATION
+              <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+                <br />
+                Jan 2022{" "}
+              </small>
+            </h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              A second-year college project. | Data Structures and Algorithms
+              course project{" "}
+            </time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Description: A simple command-line simulator for a hypothetical
+              Mars exploaration mission. It gets from the user information about
+              the rovers and the missions required, Then it will simulates the
+              mission assignment process
+            </p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Tools and Technologies: C++, Data Structures, Microsoft Visual
+              Studio 2019
+            </p>
+          </li>
+          <li class="ml-6 mb-10 ">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                aria-hidden="true"
+                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              PAINT FOR KIDS GAME APP
+              <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+                <br />
+                Jun 2021{" "}
+              </small>
+            </h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              A first-year college project. | Programming Techniques course
+              project,
+            </time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Description: Applying object oriented programming concepts. we
+              built a simple application that enables kids to draw fancy shapes
+              and also play some simple games with those shapes
+            </p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Tools and Technologies: C++, object oriented programming,
+              Microsoft Visual Studio 2019
+            </p>
+          </li>
+          <li class="ml-6 mb-10 ">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                aria-hidden="true"
+                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              THE PROCESSOR SIMULATION GAME
+              <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+                <br />
+                Jan 2022{" "}
+              </small>
+            </h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              A second-year college project. | Microprocessors-1 course project{" "}
+            </time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Description: A two-player processor simulation where each player
+              tries to prevent their opponent from reaching a specific value in
+              one of their registers. The players communicate with each other
+              using serial communications.
+            </p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Tools and Technologies: Intel x86 Assembly, DOSBox, MASM.
+            </p>
+          </li>
+          <li class="ml-6 mb-10 ">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                aria-hidden="true"
+                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              OPERATING SYSTEM SCHEDULER SIMULATO
+              <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+                <br />
+                Jan 2023{" "}
+              </small>
+            </h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              A third-year college project. | Operating Systems.
+            </time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Description: A CPU scheduler determines an order for the execution
+              of its processes according to a chosen scheduling algorithms:
+              Highest Priority First, Shortest Time Remaining Next, Round Robin,
+              and Multi Level Queue
+            </p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Tools and Technologies: C, Linux, Docker
+            </p>
+          </li>
+        </ol>
       </div>
     </section>
   );

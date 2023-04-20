@@ -5,9 +5,42 @@ import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import Resume from "../../../../assets/Yousef_Gilany_Resume.pdf";
+import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   const [range, setRange] = useState(85);
+  const [count, setCount] = useState(0);
+  const [message, setMessage] = useState(
+    "قلل إحتمالية حصولي على تدريب و انظر ماذا سيحدث"
+  );
+
+  useEffect(() => {
+    if (count == 0) {
+      if (range < 50) {
+        setMessage("ياساتر يارب! زود تاني بسرعة");
+        setCount(1);
+      }
+    }
+
+    if (count == 1) {
+      if (range < 50) {
+        setMessage("ياساتر يارب! زود تاني بسرعة");
+      } else {
+        setMessage("قشطة انا بحب كدة");
+        setCount(2);
+      }
+    }
+
+    if (count == 2) {
+      if (range < 50) {
+        setMessage("زود أرجوك مش قادر أتنفس");
+      } else {
+        setMessage("قشطة انا بحب كدة");
+        setCount(2);
+      }
+    }
+  }, [range]);
+
   const fields = [
     { id: 1, name: "Front-End Development", duration: 1000 },
     { id: 2, name: "Back-End Development", duration: 1000 },
@@ -44,9 +77,11 @@ const Hero = () => {
                 Yousef.
               </span>
             </h1>
+            <h1 class="leading-relaxed md:mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
+              I'm looking for an internship in
+            </h1>
             <h1 class="leading-relaxed mb-4 text-2xl font-medium tracking-tight leading-none text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
-              I'm looking for an internship in{""}
-              <mark class="px-2 my-2 mx-2 text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded ">
+              <mark class="px-2 my-2  text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded ">
                 Software Development.
               </mark>
             </h1>
@@ -60,7 +95,9 @@ const Hero = () => {
                 href="#"
                 class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
               >
-                Who am I?
+                <HashLink smooth to="/#section-four">
+                  Who am I?
+                </HashLink>
               </a>
               <a
                 href={Resume}
@@ -90,9 +127,7 @@ const Hero = () => {
                   for="default-range"
                   class="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
                 >
-                  {range > 50
-                    ? "قلل إحتمالية حصولي على تدريب و انظر ماذا سيحدث"
-                    : "زود تاني بسرعة زود تاني بسرعة"}
+                  {message}
                 </label>
               </div>
               <div class="col-span-1 ... justify-self-end">
@@ -117,9 +152,25 @@ const Hero = () => {
           </div>
           <div class=" lg:mt-0 lg:col-span-5 lg:flex">
             {range > 50 ? (
-              <img src={require("../../../../assets/art3.png")} alt="mockup" />
+              <img
+                src={require("../../../../assets/art3.png")}
+                alt="mockup"
+                style={{
+                  objectFit: "contain",
+                  width: "100%",
+                  height: " 100%",
+                }}
+              />
             ) : (
-              <img src={require("../../../../assets/art4.png")} alt="mockup" />
+              <img
+                src={require("../../../../assets/art4.png")}
+                alt="mockup"
+                style={{
+                  objectFit: "contain",
+                  width: "100%",
+                  height: " 100%",
+                }}
+              />
             )}
           </div>
 
