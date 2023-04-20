@@ -153,7 +153,7 @@ const Hero = () => {
           <div class=" lg:mt-0 lg:col-span-5 lg:flex">
             {range > 50 ? (
               <img
-                src="https://imgur.com/s9lRRll"
+                src="https://i.imgur.com/s9lRRll.png"
                 alt="mockup"
                 style={{
                   objectFit: "contain",
@@ -163,7 +163,7 @@ const Hero = () => {
               />
             ) : (
               <img
-                src="https://imgur.com/jX3gujK"
+                src="https://i.imgur.com/jX3gujK.png"
                 alt="mockup"
                 style={{
                   objectFit: "contain",
