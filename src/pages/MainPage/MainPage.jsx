@@ -12,6 +12,7 @@ import Projects from "./components/Projects/Projects";
 import { HidingHeader } from "hiding-header-react";
 import Contact from "./components/Contact/contact";
 import AboutMe from "./components/AboutMe/AboutMe";
+import Activites from "./components/Activites/Activites";
 
 const MainPage = () => {
   return (
@@ -21,12 +22,16 @@ const MainPage = () => {
       </HidingHeader>
       <Hero />
       <AboutMe />
+      <Activites />
+
       <Experience />
+
       <Divider />
       <MoreExp />
       <Story />
       <Feedback />
       <CurrentWork />
+
       <Projects />
       <Contact />
       <Footer />
