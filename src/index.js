@@ -10,18 +10,20 @@ import {
 } from "react-router-dom";
 import About from "./pages/About/About";
 import MainPage from "./pages/MainPage/MainPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainPage />,
+    errorElement: <ErrorPage />,
   },
 
-  {
-    path: "/about",
-    element: <About />,
-  },
+  // {
+  //   path: "/about",
+  //   element: <About />,
+  // },
 ]);
 root.render(
   <React.StrictMode>
