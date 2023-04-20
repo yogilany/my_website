@@ -60,7 +60,29 @@ const Story = () => {
             and participated in cultural events at the University and the City
             of Cincinnati.
           </p>
+          <a
+            href="https://drive.google.com/file/d/1syTdFqln2jjiiqA57w3JSTN3sZ448wQl/view?usp=sharing"
+            target="_blank"
+            className="mt-5 inline-flex items-center mb-5 justify-center p-3 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-blue-700 hover:text-white"
+            rel="noreferrer"
+          >
+            <span className="w-full">Check out my internship report</span>
+            <svg
+              aria-hidden="true"
+              className="w-6 h-6 ml-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </svg>
+          </a>
         </div>
+
         <div className="grid grid-cols-2 gap-4 mt-8">
           <img
             className="w-fit h-96 object-cover  rounded-lg"
