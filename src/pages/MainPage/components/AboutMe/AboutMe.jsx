@@ -39,7 +39,7 @@ const AboutMe = () => {
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
-            <span class="w-full">Checkout my studio</span>
+            <span class="w-full">Check out my studio</span>
             <svg
               aria-hidden="true"
               class="w-6 h-6 ml-3"
