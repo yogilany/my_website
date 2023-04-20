@@ -64,14 +64,14 @@ const Hero = () => {
       <section class=" bg-gray-900 pt-12 md:pt-20 pb-15" id="section-one">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="mb-4 text-4xl  font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-white">
+            <h1 class="mb-4 text-5xl  font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-white">
               Ahlan!
             </h1>
 
             <h1 class="mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl text-white">
               I'm{" "}
               <span class="text-transparent  bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
-                Youseff.
+                Yousef.
               </span>
             </h1>
             <h1 class="leading-relaxed md:mb-4 text-2xl font-medium tracking-tight  md:text-2xl lg:text-3xl text-white">
