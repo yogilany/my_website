@@ -12,6 +12,7 @@ const MoreExp = () => {
             of experience with{" "}
           </h1>
         </div>
+        
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div className=" p-2  md:w-1/6 ">
             <SolidLabel title={"C/C++"} />
