@@ -14,10 +14,7 @@ const MoreExp = () => {
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div className=" p-2  md:w-1/6 ">
-            <SolidLabel title={"C"} />
-          </div>
-          <div className="p-2 md:w-1/6 ">
-            <SolidLabel title={"C++"} />
+            <SolidLabel title={"C/C++"} />
           </div>
           <div className="p-2  md:w-1/6 ">
             <SolidLabel title={"C#"} />
@@ -31,6 +28,9 @@ const MoreExp = () => {
           <div className="p-2 md:w-1/6 ">
             <SolidLabel title={"Java"} />
           </div>
+          <div className="p-2 md:w-1/6 ">
+            <SolidLabel title={"VHDL"} />
+          </div>
           <div className="p-2 md:w-1/3">
             <SolidLabel title={"Object Oriented Programming"} />
           </div>
@@ -40,20 +40,24 @@ const MoreExp = () => {
           <div className="p-2 md:w-1/3 ">
             <SolidLabel title={"Data Structures"} />
           </div>
-          <div className="p-2 md:w-1/4 ">
-            <SolidLabel title={"Microdoft SQL Server"} />
+          <div className="p-2 md:w-1/5 ">
+            <SolidLabel title={"Microsoft SQL Server"} />
           </div>
-          <div className="p-2 md:w-1/4 ">
+          <div className="p-2 md:w-1/5 ">
             <SolidLabel title={"Quartus"} />
           </div>
-          <div className="p-2 md:w-1/4 ">
+          <div className="p-2 md:w-1/5 ">
             <SolidLabel title={"Logisim"} />
           </div>
-          <div className="p-2 md:w-1/4 ">
+          <div className="p-2 md:w-1/5 ">
             <SolidLabel title={"Multisim"} />
           </div>
           <div className="p-2 md:w-1/5 ">
-            <SolidLabel title={"Microdoft Office"} />
+            <SolidLabel title={"Modelsim"} />
+          </div>
+      
+          <div className="p-2 md:w-1/5 ">
+            <SolidLabel title={"Microsoft Office"} />
           </div>
           <div className="p-2 md:w-1/5 ">
             <SolidLabel title={"Adobe Illustrator"} />
