@@ -3,8 +3,11 @@ import React from "react";
 const Projects = () => {
   return (
     <section className=" bg-gray-800 py-12 px-3 ">
+            <hr className="drop-shadow-xl w-56 md:w-96 h-1 mx-auto my-4 border-0 rounded md:my-10 bg-gray-600" />
+
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h1 className=" text-3xl font-extrabold  text-white md:text-5xl lg:text-6xl">
+
+        <h1 className="mt-12 text-3xl font-extrabold  text-white md:text-5xl lg:text-6xl">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
             Some
           </span>{" "}
