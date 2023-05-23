@@ -30,7 +30,7 @@ const MainPage = () => {
       <MoreExp />
       <Story />
       <Feedback />
-      <CurrentWork />
+      {/* <CurrentWork /> */}
 
       <Projects />
       <Contact />
