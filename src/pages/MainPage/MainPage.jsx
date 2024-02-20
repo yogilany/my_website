@@ -18,20 +18,16 @@ const MainPage = () => {
   return (
     <>
       <HidingHeader>
-        <Header />
+      <Header />
       </HidingHeader>
       <Hero />
       <AboutMe />
       <Activites />
-
       <Experience />
-
       <Divider />
       <MoreExp />
       <Story />
       <Feedback />
-      {/* <CurrentWork /> */}
-
       <Projects />
       <Contact />
       <Footer />

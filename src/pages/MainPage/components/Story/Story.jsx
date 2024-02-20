@@ -6,19 +6,20 @@ const Story = () => {
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light  sm:text-lg text-gray-400">
           <h2 className="leading-12 mb-12 text-4xl tracking-tight font-extrabold  text-white">
-            <mark className="px-2 text-white  rounded bg-blue-500">So far</mark>{" "}
-            I have had only <span className=" text-blue-500">one</span>{" "}
-            internship opportunity,
+            {/* <mark className="px-2 text-white  rounded bg-blue-500">So far</mark>{" "} */}
+            My first internship opportunity was at{" "}
+            {/* <span className=" text-blue-500">one</span>{" "} */}
             <small className="ml-2 font-semibold text-gray-400">
-              and it was in{" "}
               <a
                 href="https://cech.uc.edu/schools/it/centers/itsolutionscenter.html"
                 target={"_blank"}
                 rel={"noreferrer"}
                 className="inline-flex items-center font-medium text-blue-600 text-blue-500 hover:underline"
               >
-                ITSC
-                <svg
+                <mark className="px-2 text-white font-bold  rounded bg-blue-500">ITSC</mark>{" "}
+
+
+                {/* <svg
                   aria-hidden="true"
                   className="w-5 h-5 ml-1"
                   fill="currentColor"
@@ -30,7 +31,7 @@ const Story = () => {
                     d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                     clipRule="evenodd"
                   ></path>
-                </svg>
+                </svg> */}
               </a>{" "}
               in the United States.
             </small>
@@ -61,9 +62,11 @@ const Story = () => {
             of Cincinnati.
           </p>
           <a
+            data-tooltip-target="tooltip3"
+
             href="https://drive.google.com/file/d/1syTdFqln2jjiiqA57w3JSTN3sZ448wQl/view?usp=sharing"
             target="_blank"
-            className="mt-5 inline-flex items-center mb-5 justify-center p-3 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-blue-700 hover:text-white"
+            className="mt-5 inline-flex items-center mb-5 justify-center p-3 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-700 text-gray-400 bg-gray-800 hover:bg-blue-700 hover:text-white"
             rel="noreferrer"
           >
             <span className="w-full">Check out my internship report</span>
@@ -81,6 +84,7 @@ const Story = () => {
               ></path>
             </svg>
           </a>
+
         </div>
 
         <div className="grid grid-cols-2 gap-4 mt-8">

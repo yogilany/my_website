@@ -5,12 +5,12 @@ const AboutMe = () => {
     <section className=" bg-gray-800" id="section-four">
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light  sm:text-lg text-gray-400">
-          <h2 className="leading-normal  md:leading-normal mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
+          <h2 className="leading-normal  md:leading-normal mb-4 text-4xl tracking-tight font-bold text-gray-900 text-white">
             Welcome to my portfolio, where the code never sleeps{" "}
             <span className=" text-blue-500">and neither do I!</span>
           </h2>
           <p className="mb-4 font-medium text-white ">
-            My name is Yousef Mahmoud Gilany, and I'm a senior-1 computer
+            My name is Yousef Gilany, and I'm a senior computer
             engineering at Cairo University, Faculty of Engineering.{" "}
           </p>
           <p className="mb-4">

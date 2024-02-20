@@ -115,7 +115,7 @@ const Experience = () => {
 
             <LabelList
               color={"text-blue-600"}
-              items={["HTML", "CSS/SASS", "JavaScript", "React.js"]}
+              items={["HTML", "CSS/SASS", "JavaScript", "React.js / Next.js", "Angular"]}
             />
           </div>
           <div className="p-2 sm:w-1/4 w-full">
@@ -123,7 +123,7 @@ const Experience = () => {
 
             <LabelList
               color={"text-yellow-600"}
-              items={["Node.js", "Express.js", "REST APIs", "Bcrypt.js"]}
+              items={["Node.js", "Express.js", "Spring Boot", "REST APIs", "Bcrypt.js"]}
             />
           </div>
           <div className="p-2 sm:w-1/4 w-full">

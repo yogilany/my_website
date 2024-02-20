@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import { motion } from "framer-motion";
-import styled from "styled-components";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
 import Resume from "../../../../assets/Yousef_Gilany_Resume.pdf";
 import { HashLink } from "react-router-hash-link";
+import Typical from 'react-typical'
+import ProfilePicture from "../../../../assets/yousef_gilany.webp"
 
 const Hero = () => {
   const [range, setRange] = useState(85);
@@ -64,27 +62,29 @@ const Hero = () => {
       <section className=" bg-gray-900 pt-12 md:pt-20 pb-15" id="section-one">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="mb-4 text-5xl  font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-white">
-              Ahlan!
-            </h1>
-
+       
+            <Typical
+            className="mb-4 text-5xl  font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-gray-300"
+              steps={['Ahlan!', 1000, 'Hey!', 1500, 'Hola!', 1500, 'Hallo!', 1000, 'Bonjour!', 1500]}
+              loop={Infinity}
+              wrapper="p"
+            />
             <h1 className="mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl text-white">
               I'm{" "}
               <span className="text-transparent  bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
                 Yousef.
               </span>
             </h1>
-            <h1 className="leading-relaxed md:mb-4 text-2xl font-medium tracking-tight  md:text-2xl lg:text-3xl text-white">
-              I'm looking for an internship in
-            </h1>
-            <h1 className="leading-relaxed mb-4 text-2xl font-medium tracking-tight   md:text-2xl lg:text-3xl text-white">
-              <mark className="px-2 my-2  text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded ">
-                Software Development.
-              </mark>
+            <h1 className="leading-relaxed md:mb-4 text-2xl font-bold tracking-tight  md:text-2xl lg:text-3xl text-white">
+              I'm a {" "}
+              <span className="text-transparent  bg-clip-text bg-gradient-to-r  from-pink-500 to-orange-400">
+                Software Engineer.
+              </span>
             </h1>
 
+
             <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-gray-400">
-              Are you looking for an intern with a sense of humor and a love for
+              Are you looking for an Engineer with a sense of humor and a love for
               coding? Lucky you! You've found the perfect match.
             </p>
             <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4">
@@ -118,7 +118,7 @@ const Hero = () => {
                 See my resume
               </a>
             </div>
-            <div className="grid grid-cols-3 grid-flow-row gap-4">
+            {/* <div className="grid grid-cols-3 grid-flow-row gap-4">
               <div className="col-span-2 ...">
                 <label
                   htmlFor="default-range"
@@ -130,27 +130,26 @@ const Hero = () => {
               <div className="col-span-1 ... justify-self-end">
                 <label
                   htmlFor="default-range"
-                  className={`block mb-2 text-3xl font-bold text-gray-900 ${
-                    range > 50 ? "text-green-500" : "text-red-500"
-                  }`}
+                  className={`block mb-2 text-3xl font-bold text-gray-900 ${range > 50 ? "text-green-500" : "text-red-500"
+                    }`}
                 >
                   {range}%{" "}
                 </label>
               </div>
-            </div>
+            </div> */}
 
-            <input
+            {/* <input
               onChange={(e) => setRange(e.target.value)}
               id="medium-range"
               type="range"
               value={range}
               className="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer "
-            />
+            /> */}
           </div>
           <div className=" lg:mt-0 lg:col-span-5 lg:flex">
             {range > 50 ? (
               <img
-                src="https://i.imgur.com/s9lRRll.png"
+                src={ProfilePicture}
                 alt="mockup"
                 style={{
                   objectFit: "contain",
