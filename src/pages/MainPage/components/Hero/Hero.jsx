@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Resume from "../../../../assets/Yousef_Gilany_Resume.pdf";
 import { HashLink } from "react-router-hash-link";
-import Typical from 'react-typical'
+import { TypeAnimation } from 'react-type-animation'
 import ProfilePicture from "../../../../assets/yousef_gilany.webp"
 
 const Hero = () => {
@@ -63,11 +63,22 @@ const Hero = () => {
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
        
-            <Typical
-            className="mb-4 text-5xl  font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-gray-300"
-              steps={['Ahlan!', 1000, 'Hey!', 1500, 'Hola!', 1500, 'Hallo!', 1000, 'Bonjour!', 1500]}
-              loop={Infinity}
+            <TypeAnimation
+              className="mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-gray-300"
+              sequence={[
+                'Ahlan!',
+                1000,
+                'Hey!',
+                1500,
+                'Hola!',
+                1500,
+                'Hallo!',
+                1000,
+                'Bonjour!',
+                1500,
+              ]}
               wrapper="p"
+              repeat={Infinity}
             />
             <h1 className="mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl text-white">
               I'm{" "}
