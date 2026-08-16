@@ -2159,7 +2159,7 @@ a {
   .site-header-inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
   }
@@ -2177,13 +2177,15 @@ a {
       height 320ms ease,
       padding 320ms ease,
       font-size 320ms ease,
-      font-weight 320ms ease,
       transform 180ms ease,
       box-shadow 180ms ease;
   }
 
   .header-actions {
-    display: contents;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
   }
 
   .site-header-inner nav {
@@ -2231,7 +2233,6 @@ a {
       height 320ms ease,
       padding 320ms ease,
       font-size 320ms ease,
-      font-weight 320ms ease,
       transform 180ms ease,
       box-shadow 180ms ease;
   }
@@ -2246,7 +2247,7 @@ a {
   }
 
   .site-header.is-compact {
-    padding: 0.32rem 0;
+    padding: 0.75rem 0 0.4rem;
     background: color-mix(in srgb, var(--paper) 92%, transparent);
     border-bottom-color: var(--line);
     box-shadow: 0 8px 0 rgba(23, 20, 17, 0.04);
@@ -2265,7 +2266,6 @@ a {
     height: 2.1rem;
     padding: 0 0.65rem;
     font-size: 0.72rem;
-    font-weight: 600;
     box-shadow: 3px 3px 0 var(--line);
   }
 
