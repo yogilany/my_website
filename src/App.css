@@ -2157,53 +2157,40 @@ a {
   }
 
   .site-header-inner {
-    grid-template-columns: auto 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 0.5rem;
   }
 
   .nav-toggle {
-    display: inline-grid;
-    place-items: center;
-    width: 5.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 3rem;
-    padding: 0;
+    padding: 0 0.95rem;
     background: #fff;
     font-weight: 950;
     cursor: pointer;
-    overflow: hidden;
     transition:
-      width 480ms cubic-bezier(0.22, 1, 0.36, 1),
-      height 480ms cubic-bezier(0.22, 1, 0.36, 1),
+      height 320ms ease,
+      padding 320ms ease,
+      font-size 320ms ease,
+      font-weight 320ms ease,
       transform 180ms ease,
       box-shadow 180ms ease;
   }
 
-  .nav-toggle-label,
-  .menu-icon {
-    grid-area: 1 / 1;
-    transition:
-      opacity 280ms ease,
-      transform 480ms cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .menu-icon {
-    display: block;
-    opacity: 0;
-    transform: scale(0.72);
-    pointer-events: none;
-  }
-
   .header-actions {
-    justify-self: end;
-    gap: 0.5rem;
-    transition: gap 480ms cubic-bezier(0.22, 1, 0.36, 1);
+    display: contents;
   }
 
   .site-header-inner nav {
     display: grid;
     grid-template-rows: 0fr;
+    flex: 1 0 100%;
     order: 3;
-    grid-column: 1 / -1;
     justify-content: stretch;
     overflow: hidden;
     pointer-events: none;
@@ -2218,7 +2205,7 @@ a {
   .nav-panel {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0.2rem 0.15rem;
     min-height: 0;
     overflow: hidden;
@@ -2238,36 +2225,28 @@ a {
   }
 
   .resume-link {
-    display: inline-grid;
-    place-items: center;
-    width: 6.7rem;
     height: 3rem;
-    padding: 0;
-    overflow: hidden;
+    padding: 0 0.95rem;
     transition:
-      width 480ms cubic-bezier(0.22, 1, 0.36, 1),
-      height 480ms cubic-bezier(0.22, 1, 0.36, 1),
+      height 320ms ease,
+      padding 320ms ease,
+      font-size 320ms ease,
+      font-weight 320ms ease,
       transform 180ms ease,
       box-shadow 180ms ease;
   }
 
-  .resume-label,
-  .resume-icon {
-    grid-area: 1 / 1;
+  .brand-mark {
     transition:
-      opacity 280ms ease,
-      transform 480ms cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .resume-icon {
-    display: block;
-    opacity: 0;
-    transform: scale(0.72);
-    pointer-events: none;
+      width 320ms ease,
+      height 320ms ease,
+      font-size 320ms ease,
+      transform 180ms ease,
+      box-shadow 180ms ease;
   }
 
   .site-header.is-compact {
-    padding: 0.28rem 0;
+    padding: 0.32rem 0;
     background: color-mix(in srgb, var(--paper) 92%, transparent);
     border-bottom-color: var(--line);
     box-shadow: 0 8px 0 rgba(23, 20, 17, 0.04);
@@ -2275,43 +2254,19 @@ a {
   }
 
   .site-header.is-compact .brand-mark {
-    width: 2rem;
-    height: 2rem;
+    width: 2.1rem;
+    height: 2.1rem;
     font-size: 0.72rem;
     box-shadow: 3px 3px 0 var(--line);
   }
 
-  .site-header.is-compact .header-actions {
-    gap: 0.4rem;
-  }
-
   .site-header.is-compact .nav-toggle,
   .site-header.is-compact .resume-link {
-    width: 2rem;
-    height: 2rem;
+    height: 2.1rem;
+    padding: 0 0.65rem;
+    font-size: 0.72rem;
+    font-weight: 600;
     box-shadow: 3px 3px 0 var(--line);
-  }
-
-  .site-header.is-compact .nav-toggle-label,
-  .site-header.is-compact .resume-label {
-    opacity: 0;
-    transform: scale(0.84);
-  }
-
-  .site-header.is-compact .menu-icon-open,
-  .site-header.is-compact .resume-icon {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  .site-header.is-compact.is-open .menu-icon-open {
-    opacity: 0;
-    transform: scale(0.72);
-  }
-
-  .site-header.is-compact.is-open .menu-icon-close {
-    opacity: 1;
-    transform: scale(1);
   }
 
   main {
