@@ -173,16 +173,6 @@ a {
   padding: 0.8rem 1rem;
 }
 
-.resume-label {
-  white-space: nowrap;
-}
-
-.resume-icon {
-  display: none;
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
 .hero-section,
 .section,
 .site-footer {
