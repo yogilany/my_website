@@ -2,5 +2,6 @@
   "buildCommand": "npm run build",
   "devCommand": "npm start",
   "framework": "create-react-app",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "rewrites": [{ "source": "/((?!static/).*)", "destination": "/index.html" }]
 }
