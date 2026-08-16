@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./App.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,11 +15,11 @@ const router = createBrowserRouter([
     element: <MainPage />,
     errorElement: <ErrorPage />,
   },
-
-  // {
-  //   path: "/about",
-  //   element: <About />,
-  // },
+  {
+    path: "/projects/:slug",
+    element: <ProjectPage />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 root.render(
   <React.StrictMode>
