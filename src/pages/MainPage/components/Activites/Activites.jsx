@@ -1,10 +1,10 @@
 import React from "react";
-import wie from "../../../../assets/wie.png";
-import ep from "../../../../assets/ep.png";
-import curt from "../../../../assets/curt.png";
-import cufe from "../../../../assets/cufe.png";
-import ieee from "../../../../assets/ieee.png";
-import teens from "../../../../assets/teens.png";
+import wie from "../../../../assets/wie.webp";
+import ep from "../../../../assets/ep.webp";
+import curt from "../../../../assets/curt.webp";
+import cufe from "../../../../assets/cufe.webp";
+import ieee from "../../../../assets/ieee.webp";
+import teens from "../../../../assets/teens.webp";
 
 import Divider from "../../Elements/Divider";
 

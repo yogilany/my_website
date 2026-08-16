@@ -1,7 +1,7 @@
 import React from "react";
-import coone from "../../../../assets/co-1.png";
-import cotwo from "../../../../assets/co-2.png";
-import cothree from "../../../../assets/co-3.png";
+import coone from "../../../../assets/co-1.webp";
+import cotwo from "../../../../assets/co-2.webp";
+import cothree from "../../../../assets/co-3.webp";
 
 const Contact = () => {
   return (

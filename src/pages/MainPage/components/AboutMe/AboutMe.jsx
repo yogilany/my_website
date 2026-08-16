@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../../../assets/me.png";
+import me from "../../../../assets/me.webp";
 const AboutMe = () => {
   return (
     <section className=" bg-gray-800" id="section-four">
