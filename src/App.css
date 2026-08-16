@@ -1515,19 +1515,22 @@ a {
 }
 
 .contact-section .contact-actions a {
-  gap: 0.55rem;
   background: var(--ink);
   color: var(--paper-strong);
 }
 
-.contact-section .contact-actions svg {
-  width: 1.15rem;
-  height: 1.15rem;
-  flex-shrink: 0;
+.contact-section .contact-actions .whatsapp-action {
+  background: #146b48;
+  color: white;
 }
 
-.contact-section .contact-actions .whatsapp-action {
-  background: var(--green);
+.contact-section .contact-actions .linkedin-action {
+  background: #084a8d;
+  color: white;
+}
+
+.contact-section .contact-actions .instagram-action {
+  background: #111;
   color: white;
 }
 

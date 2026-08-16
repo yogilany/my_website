@@ -716,62 +716,30 @@ const MainPage = () => {
           </button>
 
           <div className="contact-actions">
-            <a href="mailto:yogilany@gmail.com">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path
-                  fill="currentColor"
-                  d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm1.7.5 7.05 5.1L18.8 6H4.7ZM20 7.38l-7.36 5.32a1.1 1.1 0 0 1-1.28 0L4 7.38V18h16V7.38Z"
-                />
-              </svg>
-              yogilany@gmail.com
-            </a>
-            <a href="tel:+201159746101">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path
-                  fill="currentColor"
-                  d="M7.2 3.5h3.1c.5 0 .9.35 1 .84l.6 2.7a1 1 0 0 1-.27.93l-1.7 1.7a12.4 12.4 0 0 0 5.4 5.4l1.7-1.7a1 1 0 0 1 .93-.27l2.7.6c.49.1.84.5.84 1v3.1a1.5 1.5 0 0 1-1.6 1.5C9.7 19.8 4.2 14.3 3.7 5.1A1.5 1.5 0 0 1 5.2 3.5h2Z"
-                />
-              </svg>
-              +20 115 974 6101
-            </a>
+            <a href="mailto:yogilany@gmail.com">yogilany@gmail.com</a>
+            <a href="tel:+201159746101">+2011 597 46 101</a>
             <a
               className="whatsapp-action"
               href="https://wa.me/201159746101"
               target="_blank"
               rel="noreferrer"
             >
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path
-                  fill="currentColor"
-                  d="M12.04 3.1A8.9 8.9 0 0 0 3.2 11.94c0 1.57.41 3.1 1.2 4.45L3 21l4.74-1.24a8.9 8.9 0 0 0 13.06-7.82 8.9 8.9 0 0 0-8.76-8.84Zm0 1.63A7.27 7.27 0 0 1 19.3 11.94 7.27 7.27 0 0 1 7.3 17.4l-.3-.18-2.8.73.75-2.73-.2-.32a7.27 7.27 0 0 1-1.12-3.96 7.27 7.27 0 0 1 7.41-7.21Zm4.1 9.4c-.22-.11-1.32-.65-1.52-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-.22-.11-.93-.34-1.77-1.1-.65-.58-1.1-1.3-1.23-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.08-.15.04-.28-.02-.39-.05-.11-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.79.77-.79 1.88s.81 2.18.92 2.33c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.32-.54 1.5-1.06.19-.52.19-.97.13-1.06-.05-.1-.2-.15-.42-.26Z"
-                />
-              </svg>
               WhatsApp
             </a>
             <a
+              className="linkedin-action"
               href="https://www.linkedin.com/in/yousefgilany/"
               target="_blank"
               rel="noreferrer"
             >
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path
-                  fill="currentColor"
-                  d="M6.5 9H4V20h2.5V9ZM5.25 4A1.5 1.5 0 1 0 5.26 7a1.5 1.5 0 0 0 0-3ZM20 20h-2.5v-5.9c0-1.76-.63-2.96-2.2-2.96-1.2 0-1.91.81-2.22 1.59-.12.28-.15.67-.15 1.06V20H10.4s.03-9.76 0-10.77h2.5v1.52c.33-.51 1.85-1.86 4.13-1.86 3.02 0 4.97 1.97 4.97 6.2V20Z"
-                />
-              </svg>
               LinkedIn
             </a>
             <a
+              className="instagram-action"
               href="https://www.instagram.com/theyousefgilany/"
               target="_blank"
               rel="noreferrer"
             >
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path
-                  fill="currentColor"
-                  d="M8 3.5h8A4.5 4.5 0 0 1 20.5 8v8A4.5 4.5 0 0 1 16 20.5H8A4.5 4.5 0 0 1 3.5 16V8A4.5 4.5 0 0 1 8 3.5Zm0 1.7A2.8 2.8 0 0 0 5.2 8v8A2.8 2.8 0 0 0 8 18.8h8A2.8 2.8 0 0 0 18.8 16V8A2.8 2.8 0 0 0 16 5.2H8Zm9.15 1.35a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1ZM12 8.1A3.9 3.9 0 1 1 8.1 12 3.9 3.9 0 0 1 12 8.1Zm0 1.7A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8Z"
-                />
-              </svg>
               Instagram
             </a>
           </div>
