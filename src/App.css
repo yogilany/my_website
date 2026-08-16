@@ -140,22 +140,6 @@ a {
   place-items: center;
   background: var(--yellow);
   font-weight: 950;
-  transition:
-    width 480ms cubic-bezier(0.22, 1, 0.36, 1),
-    height 480ms cubic-bezier(0.22, 1, 0.36, 1),
-    font-size 480ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 180ms ease,
-    box-shadow 180ms ease;
-}
-
-.nav-toggle-label {
-  white-space: nowrap;
-}
-
-.menu-icon {
-  display: none;
-  width: 1.2rem;
-  height: 1.2rem;
 }
 
 .site-header nav {
