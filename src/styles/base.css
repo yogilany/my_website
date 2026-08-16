@@ -211,23 +211,23 @@ a {
     order: 3;
   }
 
-  .projects-section {
+  .intro-section {
     order: 4;
   }
 
-  .intro-section {
+  .projects-section {
     order: 5;
   }
 
-  .campus-section {
+  .stack-section {
     order: 6;
   }
 
-  .life-section {
+  .campus-section {
     order: 7;
   }
 
-  .stack-section {
+  .life-section {
     order: 8;
   }
 
