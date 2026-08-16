@@ -42,8 +42,8 @@ const Life = () => {
           <span>Traveling</span>
           <h3>New cities, new food, same suitcase panic.</h3>
           <p>
-            I like being somewhere I have to look up. Maps, trains, bad
-            translations, the good kind of lost.
+            I love planning trips and then actually going. New streets, new
+            food, a map I pretend I don’t need.
           </p>
           <Zoomable className="life-zoom" src={TravelPhoto} alt="Yousef traveling" />
         </article>
@@ -57,7 +57,6 @@ const Life = () => {
           <div className="life-adrenaline-photos">
             <figure>
               <Zoomable className="life-zoom" src={SkydivingPhoto} alt="Skydiving" />
-              <figcaption>Skydiving</figcaption>
             </figure>
             <figure>
               <Zoomable
@@ -65,7 +64,6 @@ const Life = () => {
                 src={ParachutePhoto}
                 alt="Parachuting"
               />
-              <figcaption>Parachuting</figcaption>
             </figure>
             <figure>
               <Zoomable
@@ -73,11 +71,9 @@ const Life = () => {
                 src={ParachutePhotoTwo}
                 alt="Parachuting"
               />
-              <figcaption>Parachuting</figcaption>
             </figure>
             <figure>
               <Zoomable className="life-zoom" src={ParamotorPhoto} alt="Paramotor" />
-              <figcaption>Paramotor</figcaption>
             </figure>
           </div>
         </article>

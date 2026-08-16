@@ -44,8 +44,10 @@
 
 .life-play {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: auto;
+  top: auto;
+  right: 0.7rem;
+  bottom: 0.7rem;
   z-index: 2;
   display: grid;
   place-items: center;
@@ -58,7 +60,7 @@
   color: var(--ink);
   font-size: 1.2rem;
   text-decoration: none;
-  transform: translate(-50%, -50%);
+  transform: none;
 }
 
 .life-film-copy {
@@ -113,6 +115,8 @@
 
 .life-travel .life-zoom {
   border: 2px solid var(--line);
+  aspect-ratio: 3 / 4;
+  margin-top: 1.15rem;
 }
 
 .life-zoom .zoomable-clip {
@@ -182,7 +186,6 @@
 }
 
 @media (max-width: 860px) {
-  .campus-photos,
   .life-grid,
   .life-film,
   .life-adrenaline-photos {

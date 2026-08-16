@@ -109,7 +109,6 @@
 }
 
 @media (max-width: 860px) {
-  .campus-photos,
   .life-grid,
   .life-film,
   .life-adrenaline-photos {
@@ -135,8 +134,53 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .campus-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    min-height: 0;
+    margin-bottom: 1.6rem;
+    padding: 0.2rem 0 0.5rem;
+    align-items: start;
+    justify-items: stretch;
+  }
+
   .campus-photos figure {
-    transform: none;
+    min-height: 12.75rem;
+    height: 12.75rem;
+    width: 100%;
+  }
+
+  .campus-photos .zoomable,
+  .campus-photos .zoomable-clip {
+    min-height: 12.75rem;
+    height: 12.75rem;
+  }
+
+  .campus-photos figcaption {
+    left: 0.3rem;
+    right: 0.3rem;
+    bottom: 0.3rem;
+    padding: 0.18rem 0.3rem;
+    font-size: 0.52rem;
+  }
+
+  .campus-photos figure:first-child {
+    width: 100%;
+    transform: rotate(-3deg);
+    z-index: 2;
+  }
+
+  .campus-photos figure:nth-child(2) {
+    width: 78%;
+    justify-self: end;
+    transform: rotate(5deg);
+    margin-top: -0.85rem;
+    z-index: 1;
+  }
+
+  .campus-photos figure:nth-child(3) {
+    display: none;
   }
 }
 
