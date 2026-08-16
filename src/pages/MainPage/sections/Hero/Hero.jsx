@@ -38,7 +38,7 @@ const Hero = () => {
         </p>
         <div className="hero-actions">
           <a className="primary-action" href="#work">
-            See the grown-up experience
+            Where I get paid
           </a>
           <a
             className="secondary-action"

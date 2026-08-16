@@ -71,8 +71,8 @@
 
 .zoomable.timeline-photo {
   position: absolute;
-  width: 12.5rem;
-  height: 9.2rem;
+  width: 19rem;
+  height: 14rem;
 }
 
 .stat-card:has(.zoomable.is-open),
@@ -92,9 +92,51 @@
   z-index: 20;
 }
 
+.zoomable-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1.1rem;
+  background: rgba(23, 20, 17, 0);
+  transition: background 280ms ease;
+}
+
+.zoomable-overlay.is-open {
+  background: rgba(23, 20, 17, 0.42);
+}
+
+.zoomable-overlay .zoomable-full {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  max-width: min(52rem, 92vw);
+  max-height: min(78vh, 44rem);
+  opacity: 0;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(0.78);
+  transition:
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 280ms ease;
+}
+
+.zoomable-overlay.is-open .zoomable-full {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 220ms ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .zoomable-full,
-  .zoomable-thumb {
+  .zoomable-thumb,
+  .zoomable-overlay,
+  .zoomable-overlay .zoomable-full {
     transition: none;
   }
 }

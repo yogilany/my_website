@@ -6,6 +6,14 @@
   overflow: visible;
 }
 
+.stats-track {
+  display: contents;
+}
+
+.stats-scroll-hint {
+  display: none;
+}
+
 .stat-card-wrap {
   position: relative;
   z-index: 1;
@@ -35,21 +43,31 @@
   white-space: nowrap;
 }
 
-.ta-tutorial-arrow svg {
+.ta-tutorial-arrow svg,
+.stats-scroll-hint svg {
   width: 4.4rem;
   height: 2.9rem;
-  margin: -0.1rem 0.55rem 0 0;
   overflow: visible;
 }
 
-.ta-arrow-shaft {
+.ta-tutorial-arrow svg {
+  margin: -0.1rem 0.55rem 0 0;
+}
+
+.stats-scroll-hint svg {
+  width: 7.4rem;
+  height: 2.15rem;
+}
+
+.sketch-arrow-shaft {
   fill: none;
   stroke: var(--line);
   stroke-width: 3.25;
   stroke-linecap: round;
 }
 
-.ta-tutorial-arrow marker path {
+.ta-tutorial-arrow marker path,
+.stats-scroll-hint marker path {
   fill: var(--line);
 }
 
@@ -182,11 +200,36 @@
 
 @media (max-width: 860px) {
   .stats-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 1.75rem;
+    padding-bottom: 0.35rem;
+    margin-top: -1.5rem;
+    overflow: visible;
+  }
+
+  .stats-scroll-hint {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -3.35rem;
+    z-index: 4;
+    margin: 0;
+    color: var(--ink);
+    pointer-events: none;
+    transform: rotate(8deg);
+    animation: stats-scroll-nudge 2.2s ease-in-out infinite;
+  }
+
+  .stats-track {
     display: flex;
     gap: 0.85rem;
-    padding-top: 4.4rem;
-    padding-bottom: 0.35rem;
+    padding-top: 4.6rem;
     overflow-x: auto;
+    overflow-y: visible;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -200,11 +243,25 @@
   .stat-card-wrap:last-child {
     margin-right: 0.25rem;
   }
+
+  .ta-tutorial-arrow {
+    top: -3.2rem;
+    right: 0.15rem;
+  }
 }
 
-@media (max-width: 860px) {
-  .ta-tutorial-arrow {
-    top: -2.85rem;
-    right: 0.15rem;
+@keyframes stats-scroll-nudge {
+  0%,
+  100% {
+    transform: rotate(8deg) translateX(0);
+  }
+  50% {
+    transform: rotate(8deg) translateX(3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stats-scroll-hint {
+    animation: none;
   }
 }
