@@ -1,0 +1,206 @@
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem 1rem;
+  align-items: start;
+  overflow: visible;
+}
+
+.life-film {
+  position: relative;
+  z-index: 1;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  overflow: hidden;
+  color: inherit;
+  background: #ffe0cf;
+  transform: rotate(-1.4deg);
+}
+
+.life-film-media {
+  position: relative;
+  min-height: 14rem;
+  aspect-ratio: 4 / 3;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.life-film-media .zoomable,
+.life-film-media .zoomable-clip {
+  position: absolute;
+  inset: 0;
+}
+
+.life-film-media img:not(.zoomable-full) {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 3px solid var(--line);
+}
+
+.life-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  padding-left: 0.2rem;
+  background: var(--yellow);
+  border: 3px solid var(--line);
+  box-shadow: 5px 5px 0 var(--line);
+  color: var(--ink);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+}
+
+.life-film-copy {
+  padding: 1.2rem 1.25rem 1.35rem;
+  align-self: center;
+}
+
+.life-film-copy span,
+.life-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.life-film-copy h3,
+.life-card h3 {
+  margin: 0.4rem 0 0.55rem;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  line-height: 1.1;
+}
+
+.life-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.25rem 1.25rem;
+}
+
+.life-travel {
+  position: relative;
+  z-index: 1;
+  background: #dce8ff;
+  transform: rotate(1.8deg);
+}
+
+.life-adrenaline {
+  position: relative;
+  z-index: 1;
+  grid-column: 1 / -1;
+  background: #c8ead8;
+  transform: rotate(-0.5deg);
+}
+
+.life-zoom {
+  position: relative;
+  margin-top: auto;
+  aspect-ratio: 4 / 3;
+  overflow: visible;
+  cursor: zoom-in;
+}
+
+.life-travel .life-zoom {
+  border: 2px solid var(--line);
+}
+
+.life-zoom .zoomable-clip {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.life-zoom img:not(.zoomable-full),
+.life-travel img:not(.zoomable-full) {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.life-adrenaline-photos {
+  display: grid;
+  grid-template-columns: 1.05fr 0.9fr 1fr 0.95fr;
+  gap: 0.85rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  align-items: end;
+  overflow: visible;
+}
+
+.life-adrenaline-photos figure {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  overflow: hidden;
+  border: 2px solid var(--line);
+  box-shadow: 4px 4px 0 var(--line);
+  background: var(--paper-strong);
+}
+
+.life-adrenaline-photos figure:nth-child(1) {
+  transform: rotate(-2.2deg);
+}
+
+.life-adrenaline-photos figure:nth-child(2) {
+  transform: rotate(1.6deg);
+  margin-bottom: 0.8rem;
+}
+
+.life-adrenaline-photos figure:nth-child(3) {
+  transform: rotate(-1.1deg);
+}
+
+.life-adrenaline-photos figure:nth-child(4) {
+  transform: rotate(2deg);
+  margin-bottom: 0.45rem;
+}
+
+.life-adrenaline-photos .life-zoom {
+  margin-top: 0;
+}
+
+.life-adrenaline-photos figcaption {
+  padding: 0.4rem 0.5rem;
+  border-top: 2px solid var(--line);
+  font-size: 0.72rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+@media (max-width: 860px) {
+  .campus-photos,
+  .life-grid,
+  .life-film,
+  .life-adrenaline-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .life-film,
+  .life-travel,
+  .life-adrenaline,
+  .life-adrenaline-photos figure {
+    grid-column: auto;
+    transform: none;
+    margin-bottom: 0;
+  }
+
+  .life-film-media img:not(.zoomable-full) {
+    min-height: 12rem;
+    border-right: 0;
+    border-bottom: 3px solid var(--line);
+  }
+}

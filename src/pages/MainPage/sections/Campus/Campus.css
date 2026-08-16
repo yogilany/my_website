@@ -1,0 +1,147 @@
+.campus-lede {
+  max-width: 760px;
+  margin: -0.5rem 0 1.5rem;
+}
+
+.campus-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0;
+}
+
+.campus-stat {
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  padding: 1.15rem 1.1rem 1.2rem;
+}
+
+.campus-stat:nth-child(1) {
+  background: #c8ead8;
+}
+
+.campus-stat:nth-child(2) {
+  background: #dce8ff;
+}
+
+.campus-stat:nth-child(3) {
+  background: #ffe0cf;
+}
+
+.campus-stat strong {
+  font-size: clamp(1.55rem, 2.6vw, 2.35rem);
+  line-height: 0.95;
+}
+
+.campus-stat span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.campus-stat p {
+  margin-top: 0.35rem;
+  font-size: 0.92rem;
+}
+
+.campus-photos {
+  display: grid;
+  grid-template-columns: 1.45fr 0.7fr 1.45fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  align-items: stretch;
+  min-height: 22rem;
+}
+
+.campus-photos figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  line-height: 0;
+  height: 100%;
+  min-height: 22rem;
+  background: var(--paper-strong);
+  cursor: zoom-in;
+}
+
+.campus-photos img:not(.zoomable-full),
+.campus-photos .zoomable-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campus-photos .zoomable,
+.campus-photos .zoomable-clip {
+  height: 100%;
+  min-height: 22rem;
+}
+
+.campus-photos figcaption {
+  position: absolute;
+  left: 0.65rem;
+  right: 0.65rem;
+  bottom: 0.65rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--yellow);
+  border: 1.5px solid var(--line);
+  box-shadow: 2px 2px 0 var(--line);
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.campus-photos figure:first-child {
+  transform: rotate(-1.2deg);
+}
+
+.campus-photos figure:nth-child(2) {
+  transform: rotate(1.6deg);
+}
+
+.campus-photos figure:nth-child(3) {
+  transform: rotate(-0.8deg);
+}
+
+@media (max-width: 860px) {
+  .campus-photos,
+  .life-grid,
+  .life-film,
+  .life-adrenaline-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .life-film,
+  .life-travel,
+  .life-adrenaline,
+  .life-adrenaline-photos figure {
+    grid-column: auto;
+    transform: none;
+    margin-bottom: 0;
+  }
+
+  .life-film-media img:not(.zoomable-full) {
+    min-height: 12rem;
+    border-right: 0;
+    border-bottom: 3px solid var(--line);
+  }
+
+  .campus-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .campus-photos figure {
+    transform: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .campus-stats {
+    grid-template-columns: 1fr;
+  }
+}

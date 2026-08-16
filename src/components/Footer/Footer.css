@@ -1,0 +1,18 @@
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 540px) {
+  .site-footer {
+    flex-direction: column;
+  }
+}

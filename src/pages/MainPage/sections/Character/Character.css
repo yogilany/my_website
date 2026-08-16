@@ -1,0 +1,58 @@
+.character-section {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 1.5rem 1.65rem;
+}
+
+.character-section .zoomable {
+  min-height: 360px;
+}
+
+.character-section img:not(.zoomable-full) {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border: 2px solid var(--line);
+  cursor: zoom-in;
+}
+
+.principles {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.principles p {
+  padding: 1rem;
+  background: #f8ead1;
+  border: 2px solid var(--line);
+}
+
+@media (max-width: 860px) {
+  .intro-section,
+  .stack-section,
+  .character-section,
+  .cincinnati-grid,
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .stack-section,
+  .character-section {
+    gap: 1.2rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    padding: 1.25rem 1.15rem 1.4rem;
+  }
+
+  .character-section .zoomable,
+  .character-section img:not(.zoomable-full) {
+    min-height: 16rem;
+  }
+}

@@ -1,0 +1,348 @@
+.hero-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.primary-action,
+.secondary-action,
+.contact-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.15rem;
+  padding: 0.85rem 1rem;
+  font-weight: 950;
+}
+
+.primary-action {
+  background: var(--green);
+  color: white;
+}
+
+.secondary-action {
+  background: var(--paper-strong);
+}
+
+
+.contact-section {
+  --mx: 0;
+  --my: 0;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: min(88vh, 46rem);
+  margin: 3rem 0 0;
+  padding: 5rem 1rem 7rem;
+  overflow: hidden;
+  text-align: center;
+  isolation: isolate;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(240, 188, 66, 0.55),
+    transparent 68%
+  );
+  transform: translate(calc(var(--mx) * 140px), calc(var(--my) * 90px));
+  transition: transform 220ms linear;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-section h2 {
+  position: relative;
+  z-index: 1;
+  max-width: none;
+  margin: 0;
+  font-size: clamp(2.6rem, 7.4vw, 6.2rem);
+  line-height: 0.92;
+  pointer-events: none;
+}
+
+.contact-label {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0.85rem;
+  color: var(--red);
+  font-size: 0.82rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.contact-line {
+  position: relative;
+  z-index: 1;
+  max-width: 34rem;
+  margin: 0.9rem auto 0;
+  color: #312923;
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  font-weight: 700;
+  line-height: 1.5;
+  pointer-events: none;
+}
+
+.tea-cup {
+  position: relative;
+  z-index: 2;
+  width: min(58vw, 26rem);
+  margin-top: -1.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  appearance: none;
+  cursor: pointer;
+  transform: translate(calc(var(--mx) * -220px), calc(var(--my) * -70px))
+    rotate(calc(var(--mx) * -28deg));
+  transition: transform 180ms linear;
+}
+
+.contact-section.is-pouring .tea-cup {
+  transform: translate(calc(var(--mx) * -80px), calc(var(--my) * -30px))
+    rotate(32deg) scale(1.08);
+  transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tea-cup img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 22px 18px rgba(32, 24, 19, 0.22));
+  pointer-events: none;
+  user-select: none;
+  animation: tea-idle 4.2s ease-in-out infinite;
+}
+
+.contact-section.is-hot .tea-cup img {
+  animation: tea-hot 0.9s ease-in-out infinite;
+}
+
+.contact-section.is-pouring .tea-cup img {
+  animation: tea-pour 0.55s ease-out both;
+}
+
+.tea-steam,
+.tea-splash {
+  position: absolute;
+  pointer-events: none;
+}
+
+.tea-steam {
+  left: 34%;
+  bottom: 72%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.tea-steam i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  animation: tea-wisp 2.4s ease-out infinite;
+}
+
+.tea-steam i:nth-child(1) {
+  margin-left: -1.6rem;
+  animation-delay: 0s;
+}
+.tea-steam i:nth-child(2) {
+  margin-left: -0.4rem;
+  animation-delay: 0.35s;
+}
+.tea-steam i:nth-child(3) {
+  margin-left: 0.8rem;
+  animation-delay: 0.7s;
+}
+.tea-steam i:nth-child(4) {
+  margin-left: 1.8rem;
+  animation-delay: 1.05s;
+}
+.tea-steam i:nth-child(5) {
+  margin-left: 0.2rem;
+  animation-delay: 1.4s;
+  width: 9px;
+  height: 9px;
+}
+
+.tea-splash {
+  inset: 18% -10% -8% 40%;
+  opacity: 0;
+}
+
+.contact-section.is-pouring .tea-splash {
+  opacity: 1;
+}
+
+.tea-splash i {
+  position: absolute;
+  top: 18%;
+  left: 12%;
+  width: 14px;
+  height: 22px;
+  border-radius: 999px;
+  background: #8b1c12;
+  opacity: 0;
+}
+
+.contact-section.is-pouring .tea-splash i {
+  animation: tea-drop 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.tea-splash i:nth-child(1) {
+  left: 8%;
+  animation-delay: 0.05s;
+}
+.tea-splash i:nth-child(2) {
+  left: 22%;
+  width: 10px;
+  height: 16px;
+  animation-delay: 0.12s;
+}
+.tea-splash i:nth-child(3) {
+  left: 36%;
+  width: 18px;
+  height: 28px;
+  animation-delay: 0.02s;
+}
+.tea-splash i:nth-child(4) {
+  left: 48%;
+  animation-delay: 0.18s;
+}
+.tea-splash i:nth-child(5) {
+  left: 62%;
+  width: 9px;
+  height: 14px;
+  animation-delay: 0.1s;
+}
+.tea-splash i:nth-child(6) {
+  left: 74%;
+  width: 16px;
+  height: 24px;
+  animation-delay: 0.22s;
+}
+
+.contact-section .contact-actions {
+  position: relative;
+  z-index: 3;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.contact-section .contact-actions a {
+  background: var(--ink);
+  color: var(--paper-strong);
+}
+
+.contact-section .contact-actions .whatsapp-action {
+  background: #146b48;
+  color: white;
+}
+
+.contact-section .contact-actions .linkedin-action {
+  background: #084a8d;
+  color: white;
+}
+
+.contact-section .contact-actions .instagram-action {
+  background: #111;
+  color: white;
+}
+
+@keyframes tea-idle {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes tea-hot {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(4deg);
+  }
+}
+
+@keyframes tea-pour {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  40% {
+    transform: rotate(8deg) scale(1.06);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes tea-wisp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px) scale(0.4);
+  }
+  20% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + 28px), -110px) scale(2.2);
+  }
+}
+
+@keyframes tea-drop {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(18deg) scale(0.4);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(90px, 140px) rotate(48deg) scale(1.2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tea-cup,
+  .tea-cup img,
+  .tea-steam i,
+  .tea-splash i,
+  .contact-section::before {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .contact-section {
+    min-height: 28rem;
+    padding: 3.5rem 0.75rem 5rem;
+  }
+
+  .tea-cup {
+    width: min(78vw, 18rem);
+  }
+}

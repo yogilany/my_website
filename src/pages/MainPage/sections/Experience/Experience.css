@@ -1,0 +1,346 @@
+.cincinnati-section {
+  padding-top: 4rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 1.35rem;
+  overflow: visible;
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(200px, 0.75fr) minmax(0, 1.25fr);
+  gap: 1.4rem;
+  align-items: center;
+  padding: 1.35rem 10.5rem 1.35rem 1.25rem;
+  overflow: visible;
+}
+
+.timeline-photo {
+  position: absolute;
+  top: 50%;
+  right: -1.35rem;
+  z-index: 2;
+  width: 12.5rem;
+  height: 9.2rem;
+  padding: 0;
+  overflow: visible;
+  border: 3px solid var(--line);
+  background: var(--paper-strong);
+  box-shadow: 6px 6px 0 var(--line);
+  cursor: zoom-in;
+  transform: translateY(-50%) rotate(6deg);
+  transform-origin: center center;
+}
+
+.timeline-item:nth-child(2) .timeline-photo {
+  transform: translateY(-50%) rotate(-7deg);
+  right: -1.6rem;
+}
+
+.timeline-item:nth-child(3) .timeline-photo {
+  transform: translateY(-50%) rotate(4.5deg);
+  right: -1.15rem;
+}
+
+.timeline-item:nth-child(4) .timeline-photo {
+  transform: translateY(-50%) rotate(-5.5deg);
+  right: -1.45rem;
+}
+
+.timeline-photo .zoomable-clip,
+.timeline-photo .zoomable-thumb {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.timeline-photo:hover {
+  z-index: 4;
+}
+
+.timeline-item p:first-child {
+  margin: 0 0 0.65rem;
+  color: var(--blue);
+  font-weight: 950;
+}
+
+.timeline-item h3,
+.project-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.cincinnati-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.cincinnati-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.cincinnati-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  overflow: visible;
+  position: relative;
+  z-index: 3;
+}
+
+.cincinnati-photos figure {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  cursor: zoom-in;
+}
+
+.cincinnati-photos img:not(.zoomable-full),
+.cincinnati-photos .zoomable-thumb {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cincinnati-photos .zoomable {
+  position: absolute;
+  inset: 0;
+}
+
+.cincinnati-photos figure:first-child {
+  transform: rotate(-2deg);
+}
+
+.cincinnati-photos figure:nth-child(2) {
+  transform: rotate(2.4deg);
+  margin-top: 1.75rem;
+}
+
+.cincinnati-quote {
+  position: relative;
+  margin: 2.4rem 0 0;
+  padding: 1.85rem 1.4rem 1.25rem;
+  background: #dce8ff;
+  transition:
+    box-shadow 280ms ease,
+    transform 280ms ease;
+}
+
+.cincinnati-quote.is-open {
+  box-shadow: 12px 12px 0 var(--line);
+}
+
+.cincinnati-quote-toggle {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.cincinnati-quote-flag {
+  position: absolute;
+  top: -0.85rem;
+  left: 1.1rem;
+  margin: 0 !important;
+  padding: 0.4rem 0.7rem;
+  background: var(--yellow);
+  border: 2px solid var(--line);
+  box-shadow: 3px 3px 0 var(--line);
+  color: var(--ink) !important;
+  font-size: 0.82rem !important;
+  font-weight: 950 !important;
+  line-height: 1 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transform: rotate(-3deg);
+  animation: quote-flag-bob 2.2s ease-in-out infinite;
+}
+
+.cincinnati-quote h3 {
+  margin: 0.35rem 0 0.45rem;
+  font-size: clamp(1.7rem, 3.4vw, 2.7rem);
+  line-height: 1;
+}
+
+.cincinnati-quote-meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.cincinnati-quote-cta {
+  display: inline-block;
+  margin-top: 0.85rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  font-size: 0.95rem;
+  font-weight: 950;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  transition: transform 180ms ease;
+}
+
+.cincinnati-quote .cta-close {
+  display: none;
+}
+
+.cincinnati-quote-toggle:hover .cincinnati-quote-cta {
+  transform: none;
+  box-shadow: none;
+}
+
+.cincinnati-quote.is-open .cta-open {
+  display: none;
+}
+
+.cincinnati-quote.is-open .cta-close {
+  display: inline;
+}
+
+.cincinnati-quote.is-open .cincinnati-quote-cta {
+  background: transparent;
+}
+
+.cincinnati-quote-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow-anchor: none;
+  transition: grid-template-rows 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cincinnati-quote-panel-inner {
+  overflow: hidden;
+}
+
+.work-section ~ * {
+  overflow-anchor: none;
+}
+
+.cincinnati-quote.is-open .cincinnati-quote-panel {
+  grid-template-rows: 1fr;
+}
+
+.cincinnati-quote blockquote {
+  margin: 1rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 2px solid var(--line);
+  opacity: 0;
+  transform: translateY(0.55rem);
+  transition:
+    opacity 320ms ease 80ms,
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cincinnati-quote.is-open blockquote {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cincinnati-quote blockquote p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+@keyframes quote-flag-bob {
+  0%,
+  100% {
+    transform: rotate(-3deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-3deg) translateY(3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cincinnati-quote,
+  .cincinnati-quote-panel,
+  .cincinnati-quote blockquote,
+  .cincinnati-quote-cta,
+  .cincinnati-quote-flag {
+    animation: none;
+    transition: none;
+  }
+}
+
+.cincinnati-quote footer {
+  display: grid;
+  gap: 0.15rem;
+  margin-top: 1.1rem;
+}
+
+.cincinnati-quote strong {
+  font-size: 0.95rem;
+}
+
+.cincinnati-quote span {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 860px) {
+  .intro-section,
+  .stack-section,
+  .character-section,
+  .cincinnati-grid,
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    padding: 1.25rem 1.25rem 6.5rem;
+  }
+
+  .timeline-photo,
+  .zoomable.timeline-photo {
+    top: auto;
+    bottom: -1.1rem;
+    right: 1.1rem;
+    width: 9.5rem;
+    height: 7rem;
+    transform: rotate(5deg);
+  }
+
+  .timeline-item:nth-child(2) .timeline-photo,
+  .timeline-item:nth-child(4) .timeline-photo {
+    right: auto;
+    left: 1.1rem;
+    transform: rotate(-6deg);
+  }
+
+  .timeline-item:nth-child(3) .timeline-photo {
+    transform: rotate(4deg);
+  }
+}
+
+@media (max-width: 860px) {
+  .cincinnati-photos figure {
+    transform: none;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.stack-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.75rem 1.6rem 1.9rem;
+}
+
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.7rem;
+}
+
+.stack-list span {
+  padding: 0.75rem 0.9rem;
+  background: #f4dcc1;
+  border: 2px solid var(--line);
+  font-weight: 950;
+}
+
+@media (max-width: 860px) {
+  .intro-section,
+  .stack-section,
+  .character-section,
+  .cincinnati-grid,
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .stack-section,
+  .character-section {
+    gap: 1.2rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    padding: 1.25rem 1.15rem 1.4rem;
+  }
+}

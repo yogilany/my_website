@@ -1,0 +1,237 @@
+:root {
+  --ink: #171411;
+  --paper: #fff8e8;
+  --paper-strong: #fffdf4;
+  --line: #201813;
+  --muted: #6e6256;
+  --green: #1f7a58;
+  --blue: #2667c9;
+  --red: #d8462f;
+  --yellow: #f0bc42;
+  --shadow: 8px 8px 0 var(--line);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.text-link {
+  font-weight: 850;
+  background-image: linear-gradient(
+    color-mix(in srgb, var(--yellow) 45%, transparent),
+    color-mix(in srgb, var(--yellow) 45%, transparent)
+  );
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.16em;
+  transition:
+    background-size 180ms ease,
+    background-image 180ms ease;
+}
+
+.text-link:hover {
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-size: 100% 0.45em;
+}
+
+.portfolio-shell {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+  background:
+    radial-gradient(
+      circle at 12% 8%,
+      rgba(240, 188, 66, 0.38),
+      transparent 24rem
+    ),
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(38, 103, 201, 0.2),
+      transparent 26rem
+    ),
+    linear-gradient(180deg, #fff8e8 0%, #f8ead1 52%, #fff8e8 100%);
+}
+
+.hero-section,
+.section,
+.site-footer {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 1rem;
+  color: var(--red);
+  font-size: 0.86rem;
+  font-weight: 950;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-heading {
+  max-width: 820px;
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: clamp(2.1rem, 4.2vw, 4.3rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.stat-card,
+.timeline-item,
+.project-card,
+.character-section,
+.stack-section,
+.campus-stat,
+.cincinnati-quote,
+.campus-photos figure,
+.cincinnati-photos figure,
+.life-film,
+.life-card {
+  background: var(--paper-strong);
+  border: 3px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.intro-grid p,
+.timeline-item > p,
+.project-card p,
+.principles p,
+.campus-lede,
+.campus-stat p,
+.cincinnati-copy p,
+.cincinnati-quote p,
+.life-film-copy p,
+.life-card p {
+  margin: 0;
+  color: #3d342d;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  font-weight: 620;
+}
+
+.status-note span,
+.timeline-item span,
+.project-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.timeline-item h3,
+.project-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.project-card h3 .project-name-ar,
+.project-name-ar {
+  display: block;
+  margin-top: 0.28rem;
+  color: var(--ink);
+  font-family: "Rubik", "Noto Sans Arabic", "Segoe UI", sans-serif;
+  font-size: 0.78em;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.35;
+  text-align: left;
+  text-transform: none;
+}
+
+@media (max-width: 860px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  main > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-section,
+  .section,
+  .site-footer,
+  .site-header-inner {
+    width: min(1120px, calc(100% - 2.75rem));
+  }
+
+  .hero-section {
+    order: 1;
+  }
+
+  .stats-section {
+    order: 2;
+  }
+
+  .projects-section {
+    order: 3;
+  }
+
+  .work-section {
+    order: 4;
+  }
+
+  .intro-section {
+    order: 5;
+  }
+
+  .campus-section {
+    order: 6;
+  }
+
+  .life-section {
+    order: 7;
+  }
+
+  .stack-section {
+    order: 8;
+  }
+
+  .character-section {
+    order: 9;
+  }
+
+  .contact-section {
+    order: 10;
+  }
+
+  .section {
+    padding: 2.6rem 0;
+  }
+}

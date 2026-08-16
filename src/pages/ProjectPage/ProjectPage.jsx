@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Zoomable from "../../components/ImageLightbox";
+import Zoomable from "../../components/ImageLightbox/ImageLightbox";
+import "./ProjectPage.css";
 import {
   getAdjacentProjects,
   getProjectBySlug,

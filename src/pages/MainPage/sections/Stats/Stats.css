@@ -1,0 +1,210 @@
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 3.6rem;
+  overflow: visible;
+}
+
+.stat-card-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.ta-tutorial-arrow {
+  position: absolute;
+  top: -2.55rem;
+  right: -1.85rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--ink);
+  transform: rotate(12deg);
+  transform-origin: 85% 10%;
+  animation: ta-arrow-bob 2.2s ease-in-out infinite;
+}
+
+.ta-tutorial-arrow span {
+  padding: 0.35rem 0.6rem;
+  background: var(--yellow);
+  border: 2px solid var(--line);
+  box-shadow: 3px 3px 0 var(--line);
+  font-size: 0.78rem;
+  font-weight: 950;
+  white-space: nowrap;
+}
+
+.ta-tutorial-arrow svg {
+  width: 4.4rem;
+  height: 2.9rem;
+  margin: -0.1rem 0.55rem 0 0;
+  overflow: visible;
+}
+
+.ta-arrow-shaft {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 3.25;
+  stroke-linecap: round;
+}
+
+.ta-tutorial-arrow marker path {
+  fill: var(--line);
+}
+
+.ta-tutorial-arrow:hover span {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--line);
+}
+
+@keyframes ta-arrow-bob {
+  0%,
+  100% {
+    transform: rotate(12deg) translateY(0);
+  }
+  50% {
+    transform: rotate(12deg) translateY(3px);
+  }
+}
+
+.stat-card,
+.timeline-item,
+.project-card,
+.character-section,
+.stack-section,
+.campus-stat,
+.cincinnati-quote,
+.campus-photos figure,
+.cincinnati-photos figure,
+.life-film,
+.life-card {
+  background: var(--paper-strong);
+  border: 3px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.stat-card-copy {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: clamp(1.8rem, 3.2vw, 3.1rem);
+  line-height: 1;
+}
+
+.stat-card-copy span {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.stat-card-media .zoomable,
+.stat-card-media .zoomable-clip,
+.stat-card-media .zoomable-thumb {
+  height: 100%;
+}
+
+.stat-card img:not(.zoomable-full),
+.stat-card-media img:not(.zoomable-full) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stat-card-media {
+  position: relative;
+  margin-top: auto;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.stat-card-media .zoomable {
+  position: absolute;
+  inset: 0;
+}
+
+.stat-card-media img:not(.zoomable-full) {
+  position: absolute;
+  inset: 0;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stat-split-captions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3%;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem;
+  padding: 0 0.4rem;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+.stat-card-media:has(.zoomable.is-open) .stat-split-captions {
+  opacity: 0;
+}
+
+.stat-split-caption {
+  margin: 0;
+  justify-self: center;
+  padding: 0.16rem 0.38rem;
+  background: var(--yellow);
+  border: 1.5px solid var(--line);
+  box-shadow: 2px 2px 0 var(--line);
+  color: var(--ink);
+  font-size: 0.56rem;
+  font-weight: 950;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 860px) {
+  .stats-section {
+    display: flex;
+    gap: 0.85rem;
+    padding-top: 4.4rem;
+    padding-bottom: 0.35rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .stat-card-wrap {
+    flex: 0 0 min(82%, 22rem);
+    scroll-snap-align: start;
+  }
+
+  .stat-card-wrap:last-child {
+    margin-right: 0.25rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .ta-tutorial-arrow {
+    top: -2.85rem;
+    right: 0.15rem;
+  }
+}

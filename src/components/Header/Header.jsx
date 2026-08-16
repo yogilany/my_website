@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Resume from "../../assets/Yousef_Gilany_Resume.pdf";
+import "./Header.css";
 
 const COMPACT_AFTER = 48;
 const DIRECTION_THRESHOLD = 24;

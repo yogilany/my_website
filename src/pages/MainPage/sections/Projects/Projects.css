@@ -1,0 +1,100 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.project-card {
+  min-height: 18rem;
+  padding: 1.25rem;
+}
+
+.project-card:nth-child(1) {
+  background: #c8ead8;
+}
+
+.project-card:nth-child(2) {
+  background: #dce8ff;
+}
+
+.project-card:nth-child(3) {
+  background: #ffe0cf;
+}
+
+.project-card:nth-child(4) {
+  background: #fff1b8;
+}
+
+.project-card h3 {
+  margin-top: 0.65rem;
+  font-weight: 800;
+}
+
+.project-card h3 .project-name-ar,
+.project-name-ar {
+  display: block;
+  margin-top: 0.28rem;
+  color: var(--ink);
+  font-family: "Rubik", "Noto Sans Arabic", "Segoe UI", sans-serif;
+  font-size: 0.78em;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.35;
+  text-align: left;
+  text-transform: none;
+}
+
+.dossier-masthead h1 .project-name-ar {
+  margin-top: 0.4rem;
+  color: var(--ink);
+  font-size: 0.4em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.project-card-mark {
+  display: block;
+  width: 4.25rem;
+  height: 4.25rem;
+  margin-bottom: 0.85rem;
+  object-fit: cover;
+  border: 2px solid var(--line);
+  border-radius: 1.35rem;
+  box-shadow: 3px 3px 0 var(--line);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.project-card:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0 var(--line);
+}
+
+.project-card .project-card-cta {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-weight: 950;
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .project-card {
+    min-height: auto;
+  }
+}
