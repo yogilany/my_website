@@ -187,17 +187,44 @@
 
 @media (max-width: 860px) {
   .life-grid,
-  .life-film,
-  .life-adrenaline-photos {
+  .life-film {
     grid-template-columns: 1fr;
   }
 
   .life-film,
   .life-travel,
-  .life-adrenaline,
-  .life-adrenaline-photos figure {
+  .life-adrenaline {
     grid-column: auto;
     transform: none;
+    margin-bottom: 0;
+  }
+
+  .life-adrenaline-photos {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding-top: 0.75rem;
+  }
+
+  .life-adrenaline-photos figure {
+    grid-column: auto;
+    margin-bottom: 0;
+  }
+
+  .life-adrenaline-photos figure:nth-child(1) {
+    transform: rotate(-2deg);
+  }
+
+  .life-adrenaline-photos figure:nth-child(2) {
+    transform: rotate(2.2deg);
+    margin-bottom: 0;
+  }
+
+  .life-adrenaline-photos figure:nth-child(3) {
+    transform: rotate(1.4deg);
+  }
+
+  .life-adrenaline-photos figure:nth-child(4) {
+    transform: rotate(-1.8deg);
     margin-bottom: 0;
   }
 
