@@ -70,9 +70,7 @@
 }
 
 .zoomable.timeline-photo {
-  position: absolute;
-  width: 19rem;
-  height: 14rem;
+  display: block;
 }
 
 .stat-card:has(.zoomable.is-open),
