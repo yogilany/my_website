@@ -441,6 +441,7 @@
 .dossier-pager-link {
   display: grid;
   gap: 0.25rem;
+  min-width: 0;
   padding: 1rem 1.15rem;
   transition:
     transform 180ms ease,
@@ -464,6 +465,9 @@
 
 .dossier-pager-link strong {
   font-size: 1.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .dossier-pager-home {
@@ -535,7 +539,6 @@
   .dossier-pager-link strong {
     font-size: 0.88rem;
     line-height: 1.15;
-    white-space: nowrap;
   }
 
   .dossier-pager-link.next {

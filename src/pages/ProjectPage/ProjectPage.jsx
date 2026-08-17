@@ -223,20 +223,14 @@ const ProjectPage = () => {
         <nav className="dossier-pager" aria-label="Other projects">
           <Link to={`/projects/${prev.slug}`} className="dossier-pager-link">
             <span>Previous</span>
-            <strong>
-              {prev.name}
-              {prev.nameAr ? ` · ${prev.nameAr}` : ""}
-            </strong>
+            <strong>{prev.name}</strong>
           </Link>
           <Link to="/#projects" className="dossier-pager-home">
             All projects
           </Link>
           <Link to={`/projects/${next.slug}`} className="dossier-pager-link next">
             <span>Next</span>
-            <strong>
-              {next.name}
-              {next.nameAr ? ` · ${next.nameAr}` : ""}
-            </strong>
+            <strong>{next.name}</strong>
           </Link>
         </nav>
       </main>
