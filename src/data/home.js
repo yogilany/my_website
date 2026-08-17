@@ -141,9 +141,11 @@ export const campusStats = [
 ];
 
 export const principles = [
-  "I like clean interfaces, but I like honest interfaces more.",
-  "I will refactor a confusing function and then emotionally recover.",
-  "I can explain a bug to a rubber duck, a teammate, or a classroom.",
-  "I care about the boring details because users always find them first.",
-  "Five years as class representative taught me how to listen, escalate, and close the loop.",
+  "I take my work seriously. Myself, considerably less.",
+  "If the spacing feels wrong, I will notice. Unfortunately.",
+  "I build like I’m going to be the confused user using it tomorrow.",
+  "I like teams where asking “stupid” questions is completely normal.",
+  "I’m usually the one saying, “طب ما تجرب يا أخي”",
+  "I have a habit of turning hobbies into projects and projects into businesses.",
+  "I’m equally happy shipping a feature, filming a trip, or jumping out of a plane.",
 ];

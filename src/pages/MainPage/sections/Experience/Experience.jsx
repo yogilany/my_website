@@ -34,7 +34,7 @@ const Experience = () => {
     <section className="section work-section" id="work">
       <div className="section-heading">
         <p className="section-kicker">Experience</p>
-        <h2>Professional arc, now with fewer internship disclaimers.</h2>
+        <h2>What I do for a living.</h2>
       </div>
       <div className="timeline">
         {timeline.map((item) => (

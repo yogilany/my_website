@@ -203,15 +203,15 @@ a {
     order: 1;
   }
 
-  .stats-section {
+  .intro-section {
     order: 2;
   }
 
-  .work-section {
+  .stats-section {
     order: 3;
   }
 
-  .intro-section {
+  .work-section {
     order: 4;
   }
 

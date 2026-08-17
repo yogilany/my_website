@@ -7,10 +7,7 @@ const Campus = () => {
     <section className="section campus-section" id="campus">
       <div className="section-heading">
         <p className="section-kicker">Campus life</p>
-        <h2>
-          Extra-curricular activities: the unofficial major nobody puts on the
-          diploma.
-        </h2>
+        <h2>The part school didn’t grade.</h2>
       </div>
       <p className="campus-lede">
         As a student I was deeply involved in campus life: organizing events,

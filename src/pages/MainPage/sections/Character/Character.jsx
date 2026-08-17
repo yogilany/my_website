@@ -9,7 +9,7 @@ const Character = () => {
       <Zoomable src={StudioPicture} alt="Yousef working on creative projects" />
       <div>
         <p className="section-kicker">Character</p>
-        <h2>Engineer brain, campus-leader stamina, camera-roll problem.</h2>
+        <h2>How I actually operate.</h2>
         <div className="principles">
           {principles.map((item) => (
             <p key={item}>{item}</p>
