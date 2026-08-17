@@ -30,7 +30,7 @@ export const stats = [
     copy: "Taught Languages & Compilers, Programming Techniques, and Software Engineering",
     image: StatTaImage,
     alt: "Reaction still for teaching assistant work",
-    tutorialUrl: "https://youtu.be/Ddg59fk_Pfs?si=yFwqKHfB9ajJbtz3",
+    tutorialUrl: "https://youtu.be/Ddg59fk_Pfs?si=KkGCcUVkS6EHKG-P&t=5644",
     tutorialLabel: "Watch a tutorial",
   },
 ];
