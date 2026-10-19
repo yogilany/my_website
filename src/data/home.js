@@ -13,8 +13,8 @@ import TaPhoto from "../assets/ta.webp";
 
 export const stats = [
   {
-    title: "+2 years",
-    copy: "of experience as a software engineer, plus 2 years of internships across 3 companies",
+    title: "3+ years",
+    copy: "of experience as a software engineer, plus internships across 3 companies",
     image: StatYearsImage,
     alt: "Reaction still for years of software engineering",
   },
@@ -63,7 +63,7 @@ export const timeline = [
     role: "Software Engineer",
     org: "SupportFinity",
     time: "July 2023 - Present",
-    copy: "Two years of production work: building and maintaining product features, keeping front-end and back-end conversations civil, and making performance problems explain themselves.",
+    copy: "Three years of production work: building and maintaining product features, keeping front-end and back-end conversations civil, and making performance problems explain themselves.",
     image: SupportFinityPhoto,
     alt: "SupportFinity",
   },

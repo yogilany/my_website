@@ -12,7 +12,7 @@ const Hero = () => {
           I build software that works. Then I clean it so nobody tags me at 1am.
         </h1>
         <p className="hero-lede">
-          I'm Yousef Gilany, a software engineer with two years at{" "}
+          I'm Yousef Gilany, a software engineer with three years at{" "}
           <a
             className="text-link"
             href="https://www.linkedin.com/company/supportfinity"
